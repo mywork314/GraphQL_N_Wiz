@@ -147,3 +147,12 @@ https://docs.wiz.us/dev/win-api-overview
 
 KEY CONCEPTS and WORDS .. when create Standard for GraphQL API 
 QUERIEs  MUTATIONS   OAuth (token) for scoped permissions 
+VARIABLE Passing in WIz from Query and Schema what is allowed and how to setup ...there is no logic the OWNER of product needs to supply the Variable that CAN be passed Can be assumed if QUERY provides some detail 
+
+query <alias name> { 
+
+
+@@@@@@@@@@@@@@@@@@@@@
+Changing DIRECTION and Creating GraphQL server to fetch the data 
+https://spec.graphql.org/draft/#sec-Language.Fields   
+https://graphql.org/learn/schema/  
