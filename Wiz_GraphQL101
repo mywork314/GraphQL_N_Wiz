@@ -1,4 +1,8 @@
-Wiz setup: 
+Wiz setup and tips for queries ... 
+--->> TIPS .. IT is not like SQL going off fix Wiz GraphQL file ( ) and variable INPUTS that are allowed in passing of QUERY in a Variables section.  IE GraphDB but GraphQL for query layer 
+--->> Follows JSON norms 
+---->  Wiz GUI has its own format .. THAT [] WHERE #typeRequest []    THAT THAT WHERE  ... THAT WHERE can be JSON instance wtih TYPE  WITH Type ..?? my thougt based on API JSON file and the GraphDB call to table .. 
+---->   the query can have a header information that calls variables from user + call to query defined/declared in query .. query <name of query>{$query: GraphEntityQueryInput, $projectId: String!, $first: Int, ....SEE BELOW for COMPLETE 
 Can GraphQL directly in Wiz create a user and secret 
 curl --request POST \   #will get a response from POST 
 --url 'TOKEN_URL' \    # 3 commerical + Gov(FedRAMP + hybrid 
@@ -77,3 +81,8 @@ Resources:
 https://docs.github.com/en/graphql/guides/migrating-from-rest-to-graphql 
 https://docs.wiz.us/dev/wiz-win-api  #will need accou
 https://docs.wiz.us/docs/dev-tools-resources   for Wiz SDK for Python + Postman Collection (will need  .. Collection + Variables ..in the PoSTman project 
+https://graphql.org/learn/
+https://docs.wiz.us/dev/win-api-overview
+
+KEY CONCEPTS and WORDS .. when create Standard for GraphQL API 
+QUERIEs  MUTATIONS   OAuth (token) for scoped permissions 
