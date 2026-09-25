@@ -156,3 +156,9 @@ query <alias name> {
 Changing DIRECTION and Creating GraphQL server to fetch the data 
 https://spec.graphql.org/draft/#sec-Language.Fields   
 https://graphql.org/learn/schema/  
+Building a Schema bluerpind .. SDL Scham Definaiton Language 
+1. Feil or Key
+2. Type - string float  int
+3. Argument or value     parameters passed to field 
+4 Fragment reusable chuck of query shared access operations 
+
