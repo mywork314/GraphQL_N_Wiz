@@ -3,6 +3,7 @@ Wiz setup and tips for queries ...
 --->> Follows JSON norms 
 ---->  Wiz GUI has its own format .. THAT [] WHERE #typeRequest []    THAT THAT WHERE  ... THAT WHERE can be JSON instance wtih TYPE  WITH Type ..?? my thougt based on API JSON file and the GraphDB call to table .. 
 ---->   the query can have a header information that calls variables from user + call to query defined/declared in query .. query <name of query>{$query: GraphEntityQueryInput, $projectId: String!, $first: Int, ....SEE BELOW for COMPLETE 
+----->  CURL or HTTPS language or App or POSTMAN + 
 Can GraphQL directly in Wiz create a user and secret 
 curl --request POST \   #will get a response from POST 
 --url 'TOKEN_URL' \    # 3 commerical + Gov(FedRAMP + hybrid 
