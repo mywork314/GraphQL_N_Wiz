@@ -1,0 +1,79 @@
+Wiz setup: 
+Can GraphQL directly in Wiz create a user and secret 
+curl --request POST \   #will get a response from POST 
+--url 'TOKEN_URL' \    # 3 commerical + Gov(FedRAMP + hybrid 
+--header 'content-type: application/x-www-form-urlencoded' \
+--data grant_type=client_credentials \   #Set this to client_credentials
+--data client_id=WIZ_SA_CLIENT_ID \  #service account
+--data client_secret=WIZ_SA_CLIENT_SECRET \  #service account secret when create 
+--data audience=wiz-api  #Set this to wiz-api or K8S agent wiz-agent-api
+
+Wiz GraphQL API has a single endpoint https://api.<region>.app.wiz.io/graphql, 
+# Replace <YOUR_API_ENDPOINT_HERE> with your own Wiz API endpoint, e.g. https://api.us1.app.wiz.io/graphql
+curl <YOUR_API_ENDPOINT_HERE> \
+  -H "Authorization: bearer YOUR_TOKEN_HERE" \
+  -H 'content-type: application/json' \
+  -X POST \
+  -d '{"query": "query { issues { totalCount }}"}'
+
+The API does have rate limits nd timeout at Hume and Service account and Global Limits 
+Does not apply for Service Broker + K8S  + sensors 
+User query, combined across all users --100 calls/second  + Mutation Calls is 10 calls/sec ....
+Global limits are based on https://www.apollographql.com/docs/graphos/routing/security/request-limits  
+  variables are max_<>  depth + height + aliases + root_fields + batch_size  ... and 2 minutes timeout .. 
+
+Pagination --- the process of dividing a large amount of content or data into smaller, discrete, numbered pages or sections ... ... so PAGE is RESULT of query .. OPTIMIZE output .. and ther SEO best practices for WEb pages 
+the process of dividing a large set of digital data, content, or application records into smaller, distinct segments or "pages"
+
+Make sure the API query includes both the pageInfo parameter and a first variable (where 0 < first ≤ 10,000) that determines the batch size of each iteration.
+Pagination ..quick search returns only 50 requests but 
+The hasNextPage attribute indicates whether there are more pages to load, and you receive the next page endCursor as long as there is a next page. To receive these attributes in the response, you must explicitly tell the API that you want the pageInfo response node to populate in the responses.
+To paginate your results:
+
+Run a query to get results. Make sure pageInfo is in the request.
+If hasNextPage response parameter exists in pageInfo, then:
+a. Run the query again starting from endCursor.
+b. Save new pageInfo.
+c. Repeat.
+Make sure the API query includes both the pageInfo parameter and a first variable (where 0 < first ≤ 10,000) that determines the batch size of each iteration.
+EXAMPLE with QUERY passing
+result = query_wiz_api(token, query, variables)
+print(json.dumps(result))
+pageInfo = result['issues']['pageInfo']   # Change according to your result structure:
+# Check if there are additional results
+while (pageInfo['hasNextPage']):
+    # fetch next page
+    variables['after'] = pageInfo['endCursor']
+    result = query_wiz_api(query, variables)
+    print(result)
+    pageInfo = result['issues']['pageInfo']
+
+query {
+  issues(
+    first: 20
+    filterBy: { status: [OPEN, IN_PROGRESS] }
+    orderBy: { direction: DESC, field: SEVERITY }
+  ) {
+    nodes {
+      id
+      severity
+      entity {
+         id
+         name
+         type
+      }
+      control {
+        name
+      }
+    }
+    pageInfo {
+        hasNextPage
+        endCursor
+    }
+  }
+}
+#####   THEre is a also code for adding a new connector to Cloud providor 
+Resources:
+https://docs.github.com/en/graphql/guides/migrating-from-rest-to-graphql 
+https://docs.wiz.us/dev/wiz-win-api  #will need accou
+https://docs.wiz.us/docs/dev-tools-resources   for Wiz SDK for Python + Postman Collection (will need  .. Collection + Variables ..in the PoSTman project 
