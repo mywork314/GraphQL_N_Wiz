@@ -28,7 +28,7 @@ Global limits are based on https://www.apollographql.com/docs/graphos/routing/se
 
 Pagination --- the process of dividing a large amount of content or data into smaller, discrete, numbered pages or sections ... ... so PAGE is RESULT of query .. OPTIMIZE output .. and ther SEO best practices for WEb pages 
 the process of dividing a large set of digital data, content, or application records into smaller, distinct segments or "pages"
-
+SEE BELOW for WIZ 
 Make sure the API query includes both the pageInfo parameter and a first variable (where 0 < first ≤ 10,000) that determines the batch size of each iteration.
 Pagination ..quick search returns only 50 requests but 
 The hasNextPage attribute indicates whether there are more pages to load, and you receive the next page endCursor as long as there is a next page. To receive these attributes in the response, you must explicitly tell the API that you want the pageInfo response node to populate in the responses.
@@ -76,6 +76,66 @@ query {
     }
   }
 }
+
+###############  JUST GENERAL 
+https://docs.wiz.us/dev/queries   How Queries and Pagination refernece ... 
+Run a query to get results.
+If hasNextPage is false, then you have all the results.
+If hasNextPage is true, then:
+a. Rerun the query starting from endCursor.
+b. Save new pageInfo.
+c. Repeat.
+query {
+  issues(first: 2, filterBy: { status: [OPEN] }, orderBy: { direction: DESC, field: SEVERITY }) {
+    nodes {
+      id
+      severity
+      entity {
+        id
+        name
+        type
+      }
+      control {
+        name
+      }
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}
+## RESULTS that show PAGINATION information  ###
+THEN ADD TO 
+## QUERY then  ##
+query {
+  issues(
+    first: 2
+    after: "eyJmaWVsZHM...="
+    filterBy: { status: [OPEN] }
+    orderBy: { direction: DESC, field: SEVERITY }
+  ) {
+    nodes {
+      id
+      severity
+      entity {
+         id
+         name
+         type
+      }
+      control {
+        name
+      }
+    }
+    pageInfo {
+        hasNextPage
+        endCursor
+    }
+  }
+}
+### then requsts response  ### 
+############ query GraphSearch($query: GraphEntityQueryInput ... 
+
 #####   THEre is a also code for adding a new connector to Cloud providor 
 Resources:
 https://docs.github.com/en/graphql/guides/migrating-from-rest-to-graphql 
