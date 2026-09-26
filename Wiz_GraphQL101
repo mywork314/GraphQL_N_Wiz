@@ -162,3 +162,118 @@ Building a Schema bluerpind .. SDL Scham Definaiton Language
 3. Argument or value     parameters passed to field 
 4 Fragment reusable chuck of query shared access operations 
 
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@
+From fun video REst to GraphQL 
+
+
+Source is video in
+2023 Powershell and GraphQL 
+
+
+Speaker transitioned
+from REST (multi URL requests ) to GraphQL single Source URL request https://server/api/GraphQL 
+
+
+OPERATIONS are QUERY
++ MUTATION + SUBSCRIPTION (outside scope of talk 
+
+
+Powershell module
+PSGRAPHQL endpoint 
+
+
+demonstrate how to
+use PowerShell to query data from the SpaceX API using the runGQL function. The
+speaker emphasizes the importance of using aliasing and introspection to
+improve querying and explore available fields within a GraphQL API
+
+
+From
+<https://www.youtube.com/watch?v=IVRelD6Rr3g>
+
+
+Invoke-WebRequest   + Invoke-RestMethod
+
+REST call the
+endpoint get everything back .. Not so with Graphql
+
+Coding thought
+GraphQL define an ALIAS for and then Query the Alias to get information needed
+to post .. Not sure if ALIAS will appear on POST or hidden with 
+
+
+https://docs.github.com/en/graphql/guides/introduction-to-graphql    
+
+
+ https://www.youtube.com/watch?v=IVRelD6Rr3g  source  
+From Zero to GraphQL Hero: Consuming APIs with Powershell - Mike Preston
+- PSConfEU 2023 https://psconf.eu
+
+Tools over the
+Introspection .. To expose TYPES/Objects used in API endpoint 
+
+GraphiQL tool type
+in endpoint and is exposes the DATATypes and expose endpoint objects .. QUERY
+MUTATION SUBSCRIPTION 
+
+https://spacex-production.up.railway.app  
+
+PSGraphQL module to
+include  Close to the  Introspection 
+… header if need to place authentication .. 
+
+
+He worked on another
+script 
+
+https://github.com/graphql-powershell/graphql-powershell   with coworker Jake Robinson 
+
+Talked about why
+DEPTH object wrt Country Object .. Country 
+-- Continent  then reference again
+to Country that will reference Contient in loop so need stop at specific DEPTH
+when collecting   -- is a dynamic and
+builds a cmdlt for each of the Queries KEY is $DynamicModule = dNew\\ 
+
+
+THE POWERSHELL PART no sure of @" role  
+The @ symbol in PowerShell serves
+three primary roles: Splatting, defining Arrays, and creating Hash Tables. 
+
+In PowerShell, splatting is a technique used to pass a collection of parameter values
+to a command as a single unit. Instead of typing out a long string of
+parameters on one line, you store them in a variable (typically a hashtable) and then "splat" them
+into the command using the @
+symbol
+
+Readability:
+•	     It prevents long, horizontal lines of code that require scrolling.
+Maintenance:
+•	     It's easier to update or comment out individual parameters in a structured
+•	     list.
+Dynamic
+•	     Logic: You can programmatically add or remove parameters from the
+•	     collection before passing it to the command
+
+
+All projects were
+moved to  https://github.com/APIs-guru/
+
+Site content was moved to https://APIs.guru
+
+From
+<https://github.com/graphql-kit/graphql-kit.com/blob/main/www/robot.txt>      was 
+
+Clean up queries
+create folder structure and place .gql files and then reference in MAIN body of
+CODE 
+
+Introspection-queries
+Introspection-queries
+with GraphQL data and intellisense  does query need any arguments for the item type .. Ie rocket will need ID of rocket to return the specific info on rocket OBJECT using the ID argument
+
+
+
