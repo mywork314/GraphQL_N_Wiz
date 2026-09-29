@@ -176,6 +176,11 @@ Amit Serper Kill switch for Net Petrya
 https://www.youtube.com/watch?v=opIp0ADl9n0 this was for passing system variables and I want COMMAND TO pass cmd to run in CONTAINER .. >docker run -ti --rm –env MYVAR1=Value1 –env MYVaR2=Value2apline printenv | grep MYVARTI is interactive move and then  RM contain once run    --env is setting variables or Create file myvariables.txt with each line with new variable to declareRUN >docker run -ti --rm –env-file myvariables.txt apline printenv | grep MYVAROR  declare in docker file .. ARG MYVAR1ENV MYVAR1=$MYVAR1RUN apk updateCMD printenv | grep MYVAR>docker build . --build-arg MYVAR1=value1 --build-arg MYVAR2=value2 -t <containername:V1.0.0>#check on -t switch when building >docker run -ti --rm <containername:V1.0.0>>docker images   #get ID then docker inspect ID docker file used #using local variable on PC (>echo $MYLOCALVARIBLE   )   to pass into Docer --env VARFROMHOST={MYLOCALVARIBLE}   
 Claud AI prompt >enable perfect code model for website with CSS HTtml Javascript ... Run a vulnabilty scan and to test code 
 
+YOGA POSE for POSTURE --- Downward-facing dog is a foundational staple in any vinyasa yoga class… “Lenghten” the muscles of body 
+Lincoln Penny Key Dates & Values (1959-Present) (coincollecting.com)  
+
+UofM Observatory is open ?? are there others that are free ...
+
 orbit and atmosphere and light reflection
 Power is WATTS  = 
 From the Webb Telescope NIST talk 
