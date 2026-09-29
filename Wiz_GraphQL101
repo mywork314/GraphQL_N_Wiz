@@ -134,8 +134,15 @@ query {
     }
   }
 }
+
+
+@@@ Comments out and logic in GraphQL
+@experiement
+@include 
+@skip       ---   @skip(if: true)   will not include field in output 
 ### then requsts response  ### 
 ############ query GraphSearch($query: GraphEntityQueryInput ... 
+
 
 #####   THEre is a also code for adding a new connector to Cloud providor 
 Resources:
@@ -162,8 +169,12 @@ Building a Schema bluerpind .. SDL Scham Definaiton Language
 3. Argument or value     parameters passed to field 
 4 Fragment reusable chuck of query shared access operations 
 
-
-
+@@@@
+MIST 
+Clt + Space to expose Namespace 
+ID!  not null 
+>dotnet watch run  w/variable 
+localhost:port/ui/playground opens for variable input 
 @@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@
 From fun video REst to GraphQL 
