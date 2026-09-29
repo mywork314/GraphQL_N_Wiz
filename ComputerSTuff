@@ -150,3 +150,21 @@ qPhone dark sword toolkit spyware
 Unit8200 is Israeli hacker
 Reverse engineer >cat wc>hexdump -c wc | less. Wc is exe binary.  Or Ida toolPut program doing program vs fan call in a stack program stackLoop=branches and jumps with condition Disassemblier = ghidra NSA or binary ninja or rebate CmdlineOS has systems callsInfer getopt man call getoptSearch website “malware bazaar”Want word word apps null eof Codex apiMalware yara toolImphash import address table IATImports libraries and fun order of imports>pythin impash calculator.pyGets hash fcn imported or files since py fcn can be a library file as a reference 
 Fuzzy hashes   Ssdecp.exe or ssdeep.exe Sample.exe
+
+CoPOlit also  while in sheet 
+how to compare missing values from to worksheets 
+PANDAS to compare 
+import pandas as pd
+
+# Load both worksheets
+df1 = pd.read_excel('Wiz Enrollment Tracker AWS FY26.xlsx', sheet_name='Sheet1')
+df2 = pd.read_excel('Wiz Enrollment Tracker AWS FY26.xlsx', sheet_name='Sheet2')
+
+# Count missing values per column
+missing1 = df1.isnull().sum()
+missing2 = df2.isnull().sum()
+
+# Compare missing values
+comparison = pd.DataFrame({'Sheet1': missing1, 'Sheet2': missing2, 'Difference': missing1 - missing2})
+print(comparison)
+
