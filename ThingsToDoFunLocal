@@ -104,10 +104,15 @@ His performance was still animated by energy and perfection
 Give charitably, love mankind, respect all people
 WHereever you live, whereever you go, Be honorable and upright in all you do. 
 
-POKER
+POKER  Goal is cards and number of players and are there free cards 
 Stories vs anecdotes 
 Me is earge to talk and or converse I need a topic (overthinking the event) and ingnoring the environment queues ...Otherwize I' quite.  Also still working on timing and subjects wrt poviting and time that I ramble 
 KEY for ME is to PAUSE TO buy time and collect thoughts... Then speak STATING That Upright 
+Role your and lower card seven card style and tip is down or up. 
+Omicron valley   Two hand.
+East brown down. Tv about 
+Players and number of cards and then the extra cards that will be shared 
+Bid and flip   or Flip and Bid 
 
 https://spoletousa.org/current-season/shows/   is in SC OPERA events 
 MISC and learning 
@@ -145,5 +150,44 @@ Plan something to look forward activity such vacation + beer + bike + Sam event 
 Revisit - small talk, camera, posing, open conversation, Daily routine .. Dancing, reading, SAM time, Energy when home, Music,   VOLUNTEER … Create Pattern for Myself READING Writing 200 daily … FIND HIGH ENERGY People …. Identify my negative past and Tasking on more and feeling the GUILT 
 Toastmaster for speaking in public .. 
 
+The stone surface was marked with scratches and etchings over the original carvings. The poster described finding trash scattered across the area and said that a nearby burial ground for people who were enslaved had been littered, too.
+"Nothing is sacred anymore!" they wrote. "There are other petroglyphs, along Difficult Run in Great Falls. It's a local hang-out spot for partying teens etc. and those, unfortunately, have long been covered with graffiti."
+
+
+https://colab.research.google.com/    Sandtrox    MTC ?  or RAG .. serbver with all Security tools CMDLINE so AI can issue commands LLM handoff anthropic.com/glasswire  is project glasswire for LLM 
+
+
+AXIOM.js hack .. two packages in the supply chain from N Kora with C2 for cyptocurrency .... socket.dev (or socket ai discovered ) as obfuscated dropper loader .. the deofuscated ... but StopSecurity also found ... Fake domain that drops payload into %PROGRAMDATA%\system.bat  and persists in HKCU\Sfotware\MS\windows\CurrentVersion\Run  REGvalue MicrosoftUpdate For Firefox drops %Temp%\<guid>.ps1  FROM UA mozilla/4.0(commpatiable:msie …Cool thing is that Dropper replaces package.json with clean version to evade forensic detection Install claude or gemni or shadowgit.com .. AI tools Within Claude is using WHISPER to talk and provide audio input into Claude 
+Radware's Pascal Geenens https://www.radware.com/threat-analysis-report/Opens with Canterok site for modules LLM trained on CVSpulling from CVS hosted sites  and Code Modules all ask tell me aboutSITE OpenClaw bad site even on ISOLATED PC Me is Agentic Runtime Security scans and or attacks 
+
+
+
+https://www.eraser.io/openshit sandbox will get developers.redhat.com 
+
+GRAPHQL and STUFF graphql-kut/graphql-apis mgiht now but https://github.com/APIs-guru/graphql-apis  https://github.com/go-resty/resty   https://www.youtube.com/watch?v=IVRelD6Rr3g  Powershell and graphsql with invoke-webrequest or restAPIrequest (a wrapper of webrequst that cleans output.. 
+GraphQL and Netflix arch ,.. 3 services - Users history + Movies + reviews + <> graphql uses Appollo Federation as rougher to direct to microservices listed above .. pulling all into API webinterface 3 Topics 1. Split Schema ownership2. Unified query layer 3. Independent deployments 
+
+SNI Server Name Indication in TLSv<> filter Wireshark and HELLO handshake Encrypted DNS, Pi-hole, Unbound, Cloudflare, and Quad9 can hide or reduce DNS exposure, but that does not automatically stop your ISP from seeing which websites you visit. In this hands-on test, David uses a Raspberry Pi, Python scripts, and a network tap to show how an ISP-like observer can still log website destinations through TLS/SNI traffic, even when DNS queries are hidden. We test multiple setups, including DNS over HTTPS, Pi-hole, Unbound, Cloudflare, and browser secure DNS settings, then compare what disappears from DNS logs versus what still shows up in live connection metadata. If you think encrypted DNS alone gives you browsing privacy, this demonstration may change how you think about ISP tracking, website blocking, and the limits of DNS privacy.// Python scripts //You can get the python scripts from GitHub here:DNS Monitor: https://github.com/davidbombal/sni-dn...SNI Monitor: https://github.com/davidbombal/sni-dn...
+https://www.youtube.com/watch?v=opIp0ADl9n0 passing variables into Docker to allow a program to use.. why JSON GraphQL to run against a site .. CURL https://developers.cloudflare.com/turnstile/ 
+https://www.cybereason.com/blog/blog-a-quick-recap-on-notpetya#blog-subscribe does graphql have specific data types - Google Search https://www.google.com/search?q=does+graphql+have+specific+data+types&ie=UTF-8&oe=UTF-8&hl=en-us&client=safari#lfId=ChxjMeAPIs | eBay Developers Program https://developer.ebay.com/develop/api/sell/inventory_mappingOn files >stat FILENAME>sha256sum path/to/file 
+boot.dev for learning 
+Amit Serper Kill switch for Net Petrya 
+https://www.youtube.com/watch?v=opIp0ADl9n0 this was for passing system variables and I want COMMAND TO pass cmd to run in CONTAINER .. >docker run -ti --rm –env MYVAR1=Value1 –env MYVaR2=Value2apline printenv | grep MYVARTI is interactive move and then  RM contain once run    --env is setting variables or Create file myvariables.txt with each line with new variable to declareRUN >docker run -ti --rm –env-file myvariables.txt apline printenv | grep MYVAROR  declare in docker file .. ARG MYVAR1ENV MYVAR1=$MYVAR1RUN apk updateCMD printenv | grep MYVAR>docker build . --build-arg MYVAR1=value1 --build-arg MYVAR2=value2 -t <containername:V1.0.0>#check on -t switch when building >docker run -ti --rm <containername:V1.0.0>>docker images   #get ID then docker inspect ID docker file used #using local variable on PC (>echo $MYLOCALVARIBLE   )   to pass into Docer --env VARFROMHOST={MYLOCALVARIBLE}   
+Claud AI prompt >enable perfect code model for website with CSS HTtml Javascript ... Run a vulnabilty scan and to test code 
+
+orbit and atmosphere and light reflection
+Power is WATTS  = 
+From the Webb Telescope NIST talk 
+Light 
+Ultraviolet -- visible -- infrared 
+pixils and red blue green .. imaged and combine can create more colors 
+Actuators (mirror made of Beryllium)   there is youtube video that reversed engineer the BAll Design to explain how moving it a few centimeters can produce naon level accuracy .. 
 (o)IsMyson2005bs-  for bshay101
 $o$IsMysonJOB25
+
+
+https://www.youtube.com/watch?v=wsJYffn599o    Ethiopian
+Chicken 
+Berbere is key spice but each home makes on variation of it .. 
+Niter Kibbeh   --- butter clarified ( water removed )  + spices + herbs ...Turmeric + Black cumin seas + besobela or ethiopian sacred basil dry + white cummin seeds + fenugreek + koseret (leamon flavor) + ethiopian cardamom (key ) 
+grind + added to butter at low simmer for 20 minutes and cheese cloth to strain and add to Chicken tibs 
