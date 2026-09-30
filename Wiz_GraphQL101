@@ -176,6 +176,24 @@ ID!  not null
 >dotnet watch run  w/variable 
 localhost:port/ui/playground opens for variable input 
 @@@@@@@@@@@@@@@@@@@@@@@@@@
+Baltimore orioles of 1894 and Hanlon trading with Brooklyn to get Willy Keeler.  Hanlon was always trading up according to McGraw 
+What is a Graph Database? | Why GraphQL is Not a Graph Database - Apollo GraphQL Blog https://www.apollographql.com/blog/what-is-a-graph-database-why-graphql-is-not-a-graph-database
+Graph databases are databases explicitly designed for the analysis of relationships. That is, we use graph databases when we’re interested in the analysis of relationships between data — not necessarily when we’re building the data store for your typical backend application.
+Nodes, edges, properties
+Data enters a graph database through the abstractions of nodes, edges, and properties — all of which can be extended later on in the future without affecting existing functionality.
+
+Nodes represent entities (like Teacher or Student).
+Edges represent relationships between nodes (like the relationship between a Teacher and a Student). Edges also have directionality to them. For example, you could say that a Teacher is a Teacher_of a Student.
+Properties exist to describe edges with more detail or to describe potential behaviors. For example, a Student and Teacher edge could contain properties that describe the class_name or semester in which the class was taken.
+GraphQL, the query language, was created to make it easier for app developers fetch data by asking specifically for what they want, while graph databases were designed to allow for performant analysis of relationships between entities.
+GraphQL will talk to a GraphQL Router/Servers that will do the logic and direct and pull as needed 
+
+From WIz Meeting VDR Vulnerabilty Detection Response 
+VER Vulnerabilty 
+
+Argues   Al-enabled Interal .. + MCP   remote integration 
+FedRAMP consolidated rules for 2026 for VER/VDR to support CSP’s ..    SCN an MAS adaption .. CAP corrective Action Plan for CSP’s hosting WIZ 
+
 @@@@@@@@@@@@@@@@@@@@@@@@@
 From fun video REst to GraphQL 
 
