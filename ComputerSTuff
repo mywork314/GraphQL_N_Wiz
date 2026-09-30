@@ -168,3 +168,10 @@ missing2 = df2.isnull().sum()
 comparison = pd.DataFrame({'Sheet1': missing1, 'Sheet2': missing2, 'Difference': missing1 - missing2})
 print(comparison)
 
+@@@@@@@@@@@@@@@@@@@
+https://www.youtube.com/watch?v=B8KW8KPVcUo   for 
+https://portswigger.net/research/crlf-powered-desync-attacks?utm_source=tldrsec.com&utm_medium=newsletter&utm_campaign=tl-dr-sec-347-ai-agents-hacking-companies-for-25-threat-hunter-s-guide-to-github-finding-gadgets-like-it-s-2026&_bhlid=5c7495159fe50e39823e5f32a65576ddc342922f
+https://portswigger.net/research/crlf-powered-desync-attacks  
+PortSwigger's Tom Stacey and TurtleSec's Tobia Righi show how HTTP header injection can be escalated all the way to a self-replicating CRLF-Powered desync worm. It starts with one Nginx misconfiguration, the $uri variable in a proxy_pass directive. Nginx normalizes the path before forwarding it upstream, decoding any %0d%0a an attacker slips in, so an injected newline becomes a real header boundary in the request the backend receives. That single primitive is enough for response queue poisoning, and an injected Transfer-Encoding header turns it into a CL.TE desync. The worm goes further, firing XSS in a victim's browser and using that browser to hit the next victim.
+Gobal Critca Summary Baseboards 
+Subscription Project Assignment (subscriptions)   + Top Subscriptions with Critical Issues + Top Resource with Malware + Tops with Critical vulnerability.   CISA KEVs by resource + Total resource aggrett value CISA KEVs  + Aggrett value High Profile Treats   + subscriptions with Public Exposure and Data + Critical resolved past 7 days with two aggrett values Open (reopend and first seen)  issues along with resolved (fix or deleted ) 
