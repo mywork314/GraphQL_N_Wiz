@@ -16,6 +16,9 @@ Monday is start of goals ... Wednesday is progress of Monday and FDE FTE flags a
 What is a Graph Database? | Why GraphQL is Not a Graph Database - Apollo GraphQL Blog https://www.apollographql.com/blog/what-is-a-graph-database-why-graphql-is-not-a-graph-database
 application/vnd.openxmlformats-officedocument.wordprocessingml.document
 https://www.whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/
+
+https://docs.wiz.us/dev/script-pull-vuln-findings  
+
 @@@@@@@@@@@@@@@@
 Can GraphQL directly in Wiz create a user and secret 
 curl --request POST \   #will get a response from POST 
