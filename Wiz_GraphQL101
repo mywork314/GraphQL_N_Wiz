@@ -8,6 +8,11 @@ Wiz setup and tips for queries ...
 VDR Vulnerabilty Detection Response                VER Vulnerabilty 
 Argues   Al-enabled Interal .. + MCP   remote integration 
 FedRAMP consolidated rules for 2026 for VER/VDR to support CSP’s ..    SCN an MAS adaption .. CAP corrective Action Plan for CSP’s hosting WIZ 
+E-CISO .. FISMA Data Calls    ... FISMA systems environments   FedRAMP market place for SaaS approved?     CDM mentioned on A&A meeting 
+WHAT 
+WHY 
+HOW
+Monday is start of goals ... Wednesday is progress of Monday and FDE FTE flags and needs roadblocks that need help  --- 
 @@@@@@@@@@@@@@@@
 Can GraphQL directly in Wiz create a user and secret 
 curl --request POST \   #will get a response from POST 
