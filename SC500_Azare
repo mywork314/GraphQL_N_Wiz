@@ -1,21 +1,30 @@
 Is addressing AI 
 
-Domains 
+4 Domains 
+Identity, access, governance ... tools are   PIM  = KeyVault + Azure Policy 
+Starte DB and Networking   ... tools storge Firewall + NSG + Privite Endpoints + Azure Firewall ==  me BGP Border Graud Protocol .. Architecure of 
+Secure Computer + AI ... Tools Entra Agent ID, Defender for AI + Foundry + JIT + AKS 
+Security Posture   -- tools Defender CSPM Cloud Security Posture Management) agentless vulnerability scanning, attack path analysis, cloud security explorer, AI security posture management, and cloud infrastructure entitlement management (CIEM) like WIZ + Sentinel (SIEM) + KQL + Secruity Copolit 
+
+
 Identity and access
 Network Security    Entra private endpoints access = Virtual WAN 
 Storage and Database
 Compute security and AL Security .
-Defender for Cloud + EASM, multicload 
+Defender for Cloud + Defender EASM   https://learn.microsoft.com/en-us/azure/external-attack-surface-management/   , multicload 
 MS Seentinal + Secrity Copolit   SiEM 
 
 New is 
 Entra Agent ID 
 Copollot DSPM 
 Foundary 
-
+https://state.okta.com/app/state_dtwizforgovernment_1/exkzfj6j2qzLfWKMz297/sso/saml?fromHome=true --> then to 
 https://state.mtls.okta.com/sso/idps/MTLS?stateTokenExternalId=WWd2bz
+-- > will be addressing Securing AI Models + AI Pipelines + defending generative AI deployments + protects Agentic AI systems (autonomous AI agents for executing tasks limited human supervison) AI moves from "thinking" to actively "doing" by reasoning, acting, observing outcomes, and adapting through a feedback loop
 
-
+Entra Agent ID - is identiy layer for non-human AL workloads (agentic?)
+Defender for AI Service  - work load protection plan
+Azure AI Foundry Guardrails -- governence or security controls for AL models and Agents 
 
 AZURE SC500  5 domains Tip to exam understand the core concept of best practice and tools and Azure SKU (needed for tool features ) Since its Security understanding of security feature is KEY ..and layers of security 
 Domain 2 AI   AI Guardrails Understand the scenarios used and WHY Defender analysis   +  AI Foundry for Guardrails .... AI Gateway and Foundry Mode Jailbreaks are attempts to bypass modules and safety guidelines 
