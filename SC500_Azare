@@ -1,10 +1,27 @@
 Is addressing AI 
 
 4 Domains 
-Identity, access, governance ... tools are   PIM  = KeyVault + Azure Policy 
-Starte DB and Networking   ... tools storge Firewall + NSG + Privite Endpoints + Azure Firewall ==  me BGP Border Graud Protocol .. Architecure of 
-Secure Computer + AI ... Tools Entra Agent ID, Defender for AI + Foundry + JIT + AKS 
-Security Posture   -- tools Defender CSPM Cloud Security Posture Management) agentless vulnerability scanning, attack path analysis, cloud security explorer, AI security posture management, and cloud infrastructure entitlement management (CIEM) like WIZ + Sentinel (SIEM) + KQL + Secruity Copolit 
+1. Identity, access, governance ... tools are   PIM  = KeyVault + Azure Policy 
+-- PIM Priviedged Identity management  with Justification + Duration (time limit) + MFA + SKU is AD P2   + access reviews is configured in PIM 
+ Three PIM acccess and frame as question senario for exam 
+   Permanent Active (or always on wrt high ris and not really PIM  
+    Eligible can activate as needed (for all privilages accounts 
+   Time Bound   -- project based 
+-- POLICY check for Identity wrt Contitional Access -- starts with .. Signals (Inputs = location/IP   Groups/user  App or actions deviceCompliance + Sign-inRisk ) --Decision engine IF [SIGNAL] THEN [CONTROL] to allow/block ----IE the POLICY part enforcement/control level that iclude MA + FIDO2 (passwordless) + RequirePCcomplience scan + Block Access + AppProectionPolicy    ... 
+ Exam questions ===  Policicies us most restrictive    Exclude BreakGlass excluded from Polcy    FID02 passwordless.phishingResistent 
+--- Managed Identities & OAuth Consent 
+   Manageded Identies ...Systen-assigned MI (tied to resource lifecycle 1-1  )   User-Assigned MI (resuable across resources, Independent lifecycle, Many-to-one  
+   The flow is App -- AAD to get token (no credentials ) --the Auzre resource (assigned to like KeyVault or >>) 
+   OAuth consent .. AppRegistration (defines application and persmissions scoped in Entra)    + Enterprise App (with a service Principal representation of the app in tenant ..used to asign access 
+  flow is User -- AppRegistration--scope permissions --Admin Consent --Entra --TOken issued 
+   NOTE User Consent specific to data only .. vs Admin Concsent if for Data access Tenant .. 
+2. Storage +  DB and Networking   ... tools storge Firewall + NSG + Privite Endpoints + Azure Firewall ==  me BGP Border Graud Protocol .. Architecure of 
+ 
+3. Secure Computer + AI ... Tools Entra Agent ID, Defender for AI + Foundry + JIT + AKS 
+--- Compute features 
+--- Container Security + AKS 
+    
+4. Security Posture   -- tools Defender CSPM Cloud Security Posture Management) agentless vulnerability scanning, attack path analysis, cloud security explorer, AI security posture management, and cloud infrastructure entitlement management (CIEM) like WIZ + Sentinel (SIEM) + KQL + Secruity Copolit 
 
 
 Identity and access
