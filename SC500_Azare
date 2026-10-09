@@ -1,0 +1,34 @@
+Is addressing AI 
+
+Domains 
+Identity and access
+Network Security    Entra private endpoints access = Virtual WAN 
+Storage and Database
+Compute security and AL Security .
+Defender for Cloud + EASM, multicload 
+MS Seentinal + Secrity Copolit   SiEM 
+
+New is 
+Entra Agent ID 
+Copollot DSPM 
+Foundary 
+
+https://state.mtls.okta.com/sso/idps/MTLS?stateTokenExternalId=WWd2bz
+
+
+
+AZURE SC500  5 domains Tip to exam understand the core concept of best practice and tools and Azure SKU (needed for tool features ) Since its Security understanding of security feature is KEY ..and layers of security 
+Domain 2 AI   AI Guardrails Understand the scenarios used and WHY Defender analysis   +  AI Foundry for Guardrails .... AI Gateway and Foundry Mode Jailbreaks are attempts to bypass modules and safety guidelines 
+Prompt injection malicious instruction embedded in data the model process Token usage comsumption .. patterns that might indicate abuse or data extraction if Defender AI 
+Prompt Injection .. Attackers hijack AI Agent instructionsData Exfiltration via AI -- Copolit retrieves overexposed SharePoint dataRogue Agents   -- autonomous AI Agents acting beyond their intended scopeIdentity Gap   AL Agents need their own identity layer (Entra Agent ID ) ... or conditional access polices FOR Azure Modules Plains ..
+Entra Agent ID as own Conditional Access + Permissions scope + 0365 logging and disable Manged Identity = azre resource authenticating to Azure Services (no humna0 Enttra Agent ID  = AI agent authenticating as a agent principal .. 
+PURVIEW has DLP Data loss Prevention  but also Data Security Posture Management DSPM  ..that will be for AI  CoPolit will only search for material is access in O365 misconfigured it will retrieve the content Defender XDR is will map AI agents blast radius to data that include path of agent and type of data which can be labeled ... Overlap Entra AgentID is NON ID (questions this ) Conditional/Access for Agent Permission Scope  API o365 Admin center audit + manage + disable Defender XDR?  will map agents blast radius  and tracks path of agent ... Purview for Data Security Poster Management     DLP DSPM Purveiw in addition data loss protection ..CoPoilit DSPM feature to map data/secrete ...applied lablels to apply to copolitThere exist Defender for AI services (monitor alerts)  + AZ AI Foundry Security with AI Gateway with Auth Content Filter Policy +   Throttling .. 
+DOMAIN      Storage and networking Exam will give scenario ...answer normally is best practice SAS token Account SAS  or Service SAS User Delegtaion SAS in Entra -- is the norm exam response Storage Firewall .. Disable Allow ALL    VNET + IP ..trusted Azure Services Immutability Policy WORM  Write once Read Many 1. Time based2. Legal Hold wrt deleted 3. Agency 
+SQL there exists Layers in Azure 1-6Note Understand what and why and when to use the layers DB auditing    LogAnalysis    Storage    EventHub LiveStream Ledgar Table .. Immutable    TDE (totale DB)  vs AlwaysEncrypt (masking at rows) NSG NetworkASG Application  ...can include ASG in NSGVirtual Network Manager .. Big picture of networkPrivate Access and Firewall controll SErvice have picture 
+VPN has been replaced with Entra Private access with controll Access evaluated and is treated Zero trust path OVERLAP NETWORK Private service endpoint Firewall SKU price and features .. AppGateway Layer 7 SKU BGS the protocol for Web forgot nets 
+WAN Spoke topology Entra Private Access .. over VPN 
+DOMAIN 3 VM + Containers + K8S + compute so .. Application Platforms are wrapped in JIT - opens/closes nsg for limited time access for ports RDP 3389 SSH 22 (over the NGS IP restricting port by IP) Bastion -- Basic SKU and Standard SKU .. connects via the private IP endpoint on azure backbone plane VM - have 3 types of disk encryptin 1. ADE at vm level DM-crypt + Bitlocker    and uses managed or own with keyvault 2. Encryption on HOST .. TEmp disk + Disk Cache (on host not VM?) 3. Confidential disk TPM (hardware) for confidential VM ... Defender for Server and SKU Defender for k8s 
+Azure App Service Azure Logic AppsAzure Funcations API Management supporting tools Azure ARC to hybride role of Defender <> Azure PURVIEWAzure Sential 
+
+Domain 1 Identity and Access Governance PIM the why AAD p2   or EMS ES Eligible vs Active Assignment 3 types Permanet + Eligible (privilage users) + Time bound active Eligible is PIM controlled Active always on Conditional Access or Zero ...wrt Signal Input  + Decision Engine Policy + enforcement needed rules FID02  security keys that are passwordless .. MS HELLO or KEYPASS .  facial recognition posture but starts with ONE to check .. Phishing .. IF [SINGAL] THEN (note this is the Decision Policy part) [CONTROL]  ..to allow or block Managed Identities (system assigned) OAuth Consent (user only data .. Admin access to Tenant limit .. but one to many Key Vault soft delete policy 7-90 days (purge Protect enforcea 7-90 day)  ... Certs + secrets + app KEYS (ie SSH concept for authentication of APP to Another APP) Access RBAC prefered over Policy wrt Specific Secrets HSM dedicated Key + Hardware .. check on this again for role in Keyvault ..assume VM at BOOT Scope  least privilege principle ROE roles or engage for pen testers KeyVault  ... Defender CSPM for secrets Firewall and Network exists with KeyVault Pane 
+Azure governance Framework for deployments    DENY    AUDIT   MODIFY ..DEPLOY (if does exist dependency install in Azure ) Effect Behavior IaC   Policy + Effect Verb + Scope Namespace RBAC -- Principle -- Role Def  --> Scope lever Policy Follow --  800-53  CIS   ISO2700
