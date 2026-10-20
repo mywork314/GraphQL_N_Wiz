@@ -6,6 +6,7 @@ https://docs.wiz.us/docs/ai-agent-for-soc
 Learning/Training Sessions:
 https://lms.training.wiz.io/agentic-ai-and-workflows
 https://lms.training.wiz.io/green-agent-deep-dive-on-behavior-and-architecture
+https://docs.wiz.us/dev/vulnerability-finding    IS the ARCANGEL API query reference 
 
 Application Detection and Response   will need a Defend and Sesor licenses for Wiz 
 RUN TIME SENSOR will 1. Track Events on Host Technology 2. Report on Senor providing input 3. Cloud Resource with ID tuype and Name subscriptionID   4.  K8S Context ClusterID Namespace Controllertype managing POD... Controller Name .. PodeName   5  Program Name   6 Process   7. Network Connection SourceIP Protocols outgoing/ingoing   8 FileEvent  .. Path + CRUD operation   9 RegistgryEvent 
@@ -203,3 +204,52 @@ Analyzes the groups that cover the most Findings and provide targeted remediatio
 The Green Agent states the scope of its plan explicitly by reporting the number of Findings it addresses, out of the total number of open Findings in the Issue. After implementing the first set of fixes, you can re-run the Agent to continue clearing any remaining Findings.
 
 Each Green Agent run analyzes one Posture Issue. To work through multiple Posture Issues, run the Agent separately on each one.
+
+How to enable it
+To enable the Green Agent in your tenant:
+
+In Wiz, go to Settings > Tenant > AI Features ↗.
+Select the Green Agent widget to open its details drawer.
+Click Enable at the top of the drawer. This automatically creates an internal service account with read:all permissions. You can hover over GlobalReader to see the full list of permissions granted to the service account. Wiz also adds the default Green Agent Issue Analysis Workflow to your tenant.
+To disable the Green Agent, click Disable in the same drawer. Disabling the Green Agent pauses the AI Agent features.
+
+How to use it
+Remediation summary
+Issues analyzed by the Green Agent include a highlight of the results in the Issue's detail drawer.
+
+The highlight provides a summary of the recommended course of action, which can include one or more of the following:
+
+Remediation summary–This provides a high-level summary of the remediation plan and reason for a recommended course of action.
+
+Issue severity change–Additional Agent analysis can lead to an increase or decrease in severity.
+
+(Risk Issues) Ignore Issue–In some cases, the Green Agent may determine that an Issue does not require remediation based on domain-specific analyzers, like the Workload Analyzer.
+
+(Posture Issues) Remediation scope–The Green Agent reports the number of Findings it addresses, out of the total number of open Findings in this Issue.
+
+Remediation strategy
+To review and act on the Green Agent's analysis:
+
+Always review the AI investigation and recommended remediation strategy before you proceed with remediation.
+
+On the Risk Issues ↗ or Posture Issues ↗ page, click an Issue. Its details drawer opens on the right.
+
+Click the Remediation tab in the details drawer:
+
+Top Issues for that day will already have AI-generated remediation steps.
+For all other Issues, click Run AI Analysis to manually request AI-generated remediation steps.
+(Risk Issues) You can select Choose Manually to request remediation steps based on your inputs. Select an option and click Next Step to build a remediation plan for: how to remediate, the preferred remediation strategy, resources, and remediation method.
+Manual Green Agent run times can vary based on the complexity of the Issue. For example, code analysis can take longer than simple configuration checks. You can track the Green Agent's investigation progress in the Activity Log ↗.
+
+Review the results in the Investigation tab and recommended remediation strategy in the Remediation tab.
+
+Automatic remediation actions might appear in your remediation plan:
+
+Assign to owner: Assign the Issue to the suggested assignee.
+Send to Coding Agent: When available, you can apply the suggested code fix by creating a pull request directly in your VCS, or create a new issue in your repository.
+Want to improve the results? You can re-run agent analysis by clicking the refresh icon to the top right of the remediation steps.
+
+Do you have suggestions for improvement? Click Choose Different Remediation to help us improve.
+
+Wiz Remote MCP
+If you query Wiz from your own LLM tool (such as Claude Desktop or Cursor), the Wiz MCP server provides access to Green Agent's remediation suggestions through the get_green_agent_analysis tool. See Wiz AI Tools for permission requirements.
