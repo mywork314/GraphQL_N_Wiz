@@ -25,15 +25,58 @@ Will create integratph In wqiz   .. New Intergraph .. Name and Scnoe .. new serv
     Eligible can activate as needed (for all privilages accounts 
    Time Bound   -- project based 
 -- POLICY check for Identity wrt Contitional Access -- starts with .. Signals (Inputs = location/IP   Groups/user  App or actions deviceCompliance + Sign-inRisk ) --Decision engine IF [SIGNAL] THEN [CONTROL] to allow/block ----IE the POLICY part enforcement/control level that iclude MA + FIDO2 (passwordless) + RequirePCcomplience scan + Block Access + AppProectionPolicy    ... 
- Exam questions ===  Policicies us most restrictive    Exclude BreakGlass excluded from Polcy    FID02 passwordless.phishingResistent 
+ Exam questions ===  Policies us most restrictive    Exclude BreakGlass excluded from all access Polcies    FID02 or MS HELLO  passwordless.phishingResistent 
 --- Managed Identities & OAuth Consent 
-   Manageded Identies ...Systen-assigned MI (tied to resource lifecycle 1-1  )   User-Assigned MI (resuable across resources, Independent lifecycle, Many-to-one  
+   Manageded Identies 2 types NOTE No pw or human login assigned so can not signin interactively   ...1 Systen-assigned MI (tied to resource lifecycle 1-1  )  2 User-Assigned MI (resuable across resources, Independent lifecycle, Many-to-one  .. over keyvault assigned 
    The flow is App -- AAD to get token (no credentials ) --the Auzre resource (assigned to like KeyVault or >>) 
    OAuth consent .. AppRegistration (defines application and persmissions scoped in Entra)    + Enterprise App (with a service Principal representation of the app in tenant ..used to asign access 
   flow is User -- AppRegistration--scope permissions --Admin Consent --Entra --TOken issued 
    NOTE User Consent specific to data only .. vs Admin Concsent if for Data access Tenant .. 
+---- KeyVualt .. SKU are starard ad Premium/HSM (hardware protected keys and Higher level of complience goverance)   
+      soft Delete + Purge protection  7-90 days for Soft retention then PURGE  with Purge Protection prevents permanent delete deletion during retention ...   
+       stores KEys Secrets TLS Certs  ... 
+       Defender for KeyVault .. scaning usspicicion IP + volumne of calls/operations + unusual patterns 
+       Access mode -- via Policy (legacy)   RBAC recommneded (and BLOCKS checks before action and Default is DENY)   === My take is RBAC contain Policies and Policy are set on a RESOURCE audit, deny, or modify (deploy if missing)
+Lets start with Role Based Access Control (RBAC). RBAC manages who has access to Azure resources, what areas they have access to and what they can do with those resources. RBAC can be used to assign duties within a team and grant only the amount of access needed to allow the assigned user the ability to perform their job instead of giving everybody unrestricted permissions in an Azure subscription or resource.
+Examples of Role Based Access Control (RBAC) include:
+Allowing a user the ability to only manage virtual machines in a subscription and not the ability to manage virtual networks
+Allowing a user the ability to manage all resources, such as virtual machines, websites, and subnets, within a specified resource group
+Allowing an app to access all resources in a resource group
+RBAC achieves the ability to grant users the least amount privilege to get their work done without affecting other aspects of an instance or subscription as set by the governance plan.
+Policies on the other hand play a slightly different role in governance. Azure Policies focus on resource properties during deployment and for already existing resources.  As an example, a policy can be issued to ensure users can only deploy DS series VMs within a specified resource should the user have the permission to deploy the VMs.  In an existing resource, a policy could be implemented to add or append tags to resources that do not currently have tags to make reporting on costs easier and provide a better way to assign resources to business cost centers.
+       Firewall and network .. Private endpoints + Virtual Network Service Endpoints + IP allow   disable PUBLIC 
+---- Azure Governance Framework .. follows NIST CIS ISO 27001 
+      Azure Polcy to Denyt Audit Modify DeployNotExist  AuditNotExist 
+      RBAC   Principle --RoleDefined to _ Scope ...   and BuiltIn/Custom Roles .. Scope hierarchy .. Managment Group -- Subscription -- RG _ Resource   .. EntraAccessREview tool to RBAC scopes 
+      RESOURCE LOCKS ReadOnly (no change) vs Delete(no deletion) Locks will OVERRIDE RBAC  
+      IaC Security contorls .. Policy + Effect + Scope (namespace of resource..) ... DEFINE and roleout Bicep/ARM/TerraForm ,, IaC apply and deployment Iime ...
+      EXAM .. Etran Roles vs Auzre Roles work on seperate NAMESPACE 
 2. Storage +  DB and Networking   ... tools storge Firewall + NSG + Privite Endpoints + Azure Firewall ==  me BGP Border Graud Protocol .. Architecure of 
- 
+ Storage and networking Exam will give scenario ...answer normally is best practice SAS token Account SAS  or Service SAS User Delegtaion SAS in Entra -- is the norm exam response Storage Firewall .. Disable Allow ALL    VNET + IP ..trusted Azure 
+
+--- Storage Security   ...
+     SAS Tokens   Account SAS (one to many )  Service SAS (1-1)   UseDelegation SAS most secure uses Entra 
+     Storage Firewall for VNETS IP Trusted Azure servuces ... disable Allow all networks for prod
+     Immutiablity Polices    WORM Write once Read Many )   Time-based rettention   + Legal Hold 
+     Defender for Storage    -- Malware scan + Sensiteive date  (PPI CreditCards )   Activity monitoring 
+     EXAM thoughts .. ShareKey fall Access SAS disable + Lifecycle managment does not imply Immutiable  + PrivateEndpointon starte is automatic firewall needs configure rules 
+----  Database Security 
+      Security Layers -- 1. Network (SQL firewall roles + Private endpoints + No public)  2. Authentication ( Entra-only _ disable SQL auth + Entra Admin)  3. Authorization (row-level security + Dynamic DataMasking)  4. Encryption In Transite (TLS 1.2) + Encryption at REST (TDE transparent Data Encryption) + Service-managered vs customer-managed key)   6 Column-Level (always encrypted + dataencrypted client-side + Azure never sees plaintext) 
+      Defender for DB + auditing .. Db Auditing Log Destination ( Log analytics workspace + Storage Account + Event Hub )  ... SQL Managed instance servers for all DB   .... covers AzureSQL + Cosmos DB + SQL SErvbers on Azure VMs + Azure DB for PostgreSQL/MySQL/MariaDB 
+     ** Exam Ledger Tables provide Tampe-evident, immutable transations history ...different from TDE .. **********    
+SQL there exists Layers in Azure 1-6Note Understand what and why and when to use the layers DB auditing    LogAnalysis    Storage    EventHub LiveStream Ledgar Table .. Immutable    TDE (totale DB)  vs AlwaysEncrypt (masking at rows) NSG NetworkASG Application  ...can include ASG in NSGVirtual Network Manager .. Big picture of networkPrivate Access and Firewall controll SErvice have picture 
+VPN has been replaced with Entra Private access with controll Access evaluated and is treated Zero trust path OVERLAP NETWORK Private service endpoint Firewall SKU price and features .. AppGateway Layer 7 SKU BGS the protocol for Web forgot nets 
+WAN Spoke topology Entra Private Access .. over VPN 
+-----  NSGs, ASGs & Virtual Network Manager 
+       VNet  .. Aare Firewall  with SUB divistion NSG on Subnet (all VM in subnet) NSG on NIC to specfic VM   ...... Application Security ASG is a logical grouping, no IP Dependency 
+       NSG Rule Priority .. Allow VNET 65000.. Allow LB 65001 .. Deny all 65500
+       Virtual Network Manager .. ecurity Admin Rules .. (with Priority (number value)  + Action (allow + AlwaysAllow + Deny) Conditions 
+       Security ADMIN RULES OVERRIDE NSG RULES ...This si TESTED 
+       Enterprise-wide policy enformentment that bypasses indievdual team NSGs
+       NETWORK WATCHER --- Diagnose effective Securutiy Rules on NIC -- Effective Security Rules Blad Shows Merged NSG + ASG rules 
+       +++++ there is a control ABOVE the NSG .. Azure Virtual Network Manager ... and these policies will OVERRIDE THE NSG  --- 
+
+
 3. Secure Computer + AI ... Tools Entra Agent ID, Defender for AI + Foundry + JIT + AKS 
 --- Compute features 
 --- Container Security + AKS 
@@ -66,12 +109,15 @@ Prompt injection malicious instruction embedded in data the model process Token
 Prompt Injection .. Attackers hijack AI Agent instructionsData Exfiltration via AI -- Copolit retrieves overexposed SharePoint dataRogue Agents   -- autonomous AI Agents acting beyond their intended scopeIdentity Gap   AL Agents need their own identity layer (Entra Agent ID ) ... or conditional access polices FOR Azure Modules Plains ..
 Entra Agent ID as own Conditional Access + Permissions scope + 0365 logging and disable Manged Identity = azre resource authenticating to Azure Services (no humna0 Enttra Agent ID  = AI agent authenticating as a agent principal .. 
 PURVIEW has DLP Data loss Prevention  but also Data Security Posture Management DSPM  ..that will be for AI  CoPolit will only search for material is access in O365 misconfigured it will retrieve the content Defender XDR is will map AI agents blast radius to data that include path of agent and type of data which can be labeled ... Overlap Entra AgentID is NON ID (questions this ) Conditional/Access for Agent Permission Scope  API o365 Admin center audit + manage + disable Defender XDR?  will map agents blast radius  and tracks path of agent ... Purview for Data Security Poster Management     DLP DSPM Purveiw in addition data loss protection ..CoPoilit DSPM feature to map data/secrete ...applied lablels to apply to copolitThere exist Defender for AI services (monitor alerts)  + AZ AI Foundry Security with AI Gateway with Auth Content Filter Policy +   Throttling .. 
-DOMAIN      Storage and networking Exam will give scenario ...answer normally is best practice SAS token Account SAS  or Service SAS User Delegtaion SAS in Entra -- is the norm exam response Storage Firewall .. Disable Allow ALL    VNET + IP ..trusted Azure Services Immutability Policy WORM  Write once Read Many 1. Time based2. Legal Hold wrt deleted 3. Agency 
-SQL there exists Layers in Azure 1-6Note Understand what and why and when to use the layers DB auditing    LogAnalysis    Storage    EventHub LiveStream Ledgar Table .. Immutable    TDE (totale DB)  vs AlwaysEncrypt (masking at rows) NSG NetworkASG Application  ...can include ASG in NSGVirtual Network Manager .. Big picture of networkPrivate Access and Firewall controll SErvice have picture 
-VPN has been replaced with Entra Private access with controll Access evaluated and is treated Zero trust path OVERLAP NETWORK Private service endpoint Firewall SKU price and features .. AppGateway Layer 7 SKU BGS the protocol for Web forgot nets 
-WAN Spoke topology Entra Private Access .. over VPN 
+
+
+ 
+
 DOMAIN 3 VM + Containers + K8S + compute so .. Application Platforms are wrapped in JIT - opens/closes nsg for limited time access for ports RDP 3389 SSH 22 (over the NGS IP restricting port by IP) Bastion -- Basic SKU and Standard SKU .. connects via the private IP endpoint on azure backbone plane VM - have 3 types of disk encryptin 1. ADE at vm level DM-crypt + Bitlocker    and uses managed or own with keyvault 2. Encryption on HOST .. TEmp disk + Disk Cache (on host not VM?) 3. Confidential disk TPM (hardware) for confidential VM ... Defender for Server and SKU Defender for k8s 
 Azure App Service Azure Logic AppsAzure Funcations API Management supporting tools Azure ARC to hybride role of Defender <> Azure PURVIEWAzure Sential 
 
 Domain 1 Identity and Access Governance PIM the why AAD p2   or EMS ES Eligible vs Active Assignment 3 types Permanet + Eligible (privilage users) + Time bound active Eligible is PIM controlled Active always on Conditional Access or Zero ...wrt Signal Input  + Decision Engine Policy + enforcement needed rules FID02  security keys that are passwordless .. MS HELLO or KEYPASS .  facial recognition posture but starts with ONE to check .. Phishing .. IF [SINGAL] THEN (note this is the Decision Policy part) [CONTROL]  ..to allow or block Managed Identities (system assigned) OAuth Consent (user only data .. Admin access to Tenant limit .. but one to many Key Vault soft delete policy 7-90 days (purge Protect enforcea 7-90 day)  ... Certs + secrets + app KEYS (ie SSH concept for authentication of APP to Another APP) Access RBAC prefered over Policy wrt Specific Secrets HSM dedicated Key + Hardware .. check on this again for role in Keyvault ..assume VM at BOOT Scope  least privilege principle ROE roles or engage for pen testers KeyVault  ... Defender CSPM for secrets Firewall and Network exists with KeyVault Pane 
 Azure governance Framework for deployments    DENY    AUDIT   MODIFY ..DEPLOY (if does exist dependency install in Azure ) Effect Behavior IaC   Policy + Effect Verb + Scope Namespace RBAC -- Principle -- Role Def  --> Scope lever Policy Follow --  800-53  CIS   ISO2700
+
+
+
