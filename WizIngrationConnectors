@@ -1,0 +1,327 @@
+Integrations
+Integrations Overview
+
+Recommended Updates
+
+AI Security
+
+JetStream Security
+Pillar Security
+TrojAI
+API Security
+
+Firetail
+Noname
+Postman
+API Security Scanners
+
+Akto
+Equixly
+Invicti
+Salt Security
+Tenable WAS
+Traceable
+Application Security
+
+Alma Security
+Apiiro
+Bionic
+Black Duck
+BoostSecurity
+Clover Security
+Crash Override
+DefectDojo
+Endor Labs
+JFrog Runtime Security
+Legit Security
+OFFENSAI
+OX Security
+ThreatModeler
+Tromzo
+Veracode ASPM
+AppSec Scanners (ASPM)
+
+Bright Security
+Checkmarx (SAST)
+Checkmarx One (SAST + SCA)
+Contrast
+Cycode
+Escape
+Jit
+Mend.io
+Harness (QwietAI)
+Semgrep
+Snyk
+SonarQube
+StackHawk
+TruffleHog Enterprise
+ZeroPath
+Attack Surface Scanners
+
+Censys ASM
+CyCognito
+Cloud Services
+
+Amazon SQS
+AWS EventBridge
+AWS S3
+AWS SNS
+Azure Blob Storage
+Azure Logic Apps
+Azure Service Bus
+Google Cloud Pub/Sub
+OCI Object Storage
+Oracle Cloud Infrastructure Notifications
+CMDB
+
+ServiceNow CMDB—Pull
+ServiceNow CMDB—Fetch
+Compliance Management
+
+6clicks
+Akitra Andromeda
+Anecdotes
+Caveonix
+ComplianceCow
+CYFOX OmniSec
+Cypago
+Drata
+Hyperproof
+RegScale
+Scytale
+Sprinto
+TrustMAPP
+USAI Archangel
+Vanta
+ZenGRC
+Cyber Risk Quantification
+
+Balbix
+CrowsNest
+CYE Security
+Onyxia
+Safe Security
+Data Security Services
+
+Collibra
+Concentric AI
+Orion Security
+Varonis
+Data Lakes and Analytics
+
+Beacon
+CloudQuery
+Cribl
+Cribl Webhook
+Dassana
+DataBahn API
+DataBahn Webhook
+Dynatrace
+Elastic
+Google Cloud Storage
+Polarity
+Snowflake Connected App
+Sola
+TargetBoard
+Tarsal
+Data Security Scanners
+
+Bedrock Security
+BigID
+Bold.ai
+Cyera
+Dig
+GitGuardian
+Laminar
+Proofpoint DSPM
+Sentra
+Developer Tools
+
+Backstage
+Backstage Software Catalog
+Base44
+ControlMonkey
+GetDX
+Lovable
+Scalr
+StackGen
+Endpoint Management
+
+Qualys Patch Management
+Identity Security
+
+Managed Detection and Response
+
+MCP Integrations
+
+Network Security
+
+Offensive Security Tools
+
+Resiliency
+
+SaaS Security Posture Management
+
+Security Data Management
+
+Amazon Q
+Armis VIPR (Silk)
+Avalor
+Blast Security
+AWS CloudTrail Lake
+AWS Security Lake
+Brinqa
+Cado Security
+Censys
+Cortex
+Custom Integration
+Jed Security
+Kenna Security
+Monad
+Panaseer
+Rescana
+Resourcely
+Roadie
+ServiceNow CC
+Sevco
+Shockwave
+Tumeryk
+SIEM
+
+SOAR and Automation
+
+Backline
+Blink Ops
+Botprise
+Cortex XSOAR/XSIAM
+Cyware
+DevOcean
+Dropzone AI – API
+Dropzone – Webhook
+D3 Security
+Exaforce
+Intezer
+Mave
+Opus
+Prophet Security—webhook
+QRadar SOAR
+Surf AI
+Swimlane
+Tines
+Torq
+Torq API
+Workato
+Threat Detection
+
+Cybersixgill
+Cymulate
+Google Threat Intelligence
+SafeBreach
+SentinelOne
+Tidal Cyber
+Ticketing & Messaging
+
+AWS Security Incident Response
+Azure DevOps Ticketing
+Azure DevOps Boards
+Cisco Webex
+ClickUp
+Email
+Freshservice
+GitHub Issues
+Google Chat
+Jira
+
+Linear
+Microsoft Teams
+monday.com
+Notion
+Nucleus Security
+Opsgenie
+PagerDuty
+Rootly
+ServiceNow Ticketing
+
+Slackbot
+Wiz App for Slack
+Webhook
+Zendesk
+Vulnerability Management & Response
+
+Armis
+ArmorCode
+Averlon
+Axonius
+Check Point Threat Exposure Management (Veriti)
+Circumvent
+Cogent
+Daxa Cloud Defense
+Hackuity
+Ionix
+Ivanti
+Kondukto
+Konvu
+LogicGate
+Maze
+Miggo
+NopSec
+Ordr
+Precize
+Qualys TruRisk Management
+Seemplicity
+ServiceNow VR (SecOps)
+Tenable One
+Vulcan
+Wabbi
+ServiceNow Container VR
+ServiceNow VR
+Vulnerability Scanners
+
+CrowdStrike Exposure Management
+Microsoft Defender Vulnerability Management
+Oligo Security
+Qualys VMDR
+Rapid7 InsightVM
+Tenable SC
+Tenable VM
+Qualys WAS
+Tanium Comply
+
+API-Based Automation & Integration
+Wiz API Best Practices
+Getting Started with Wiz API
+
+Introduction to Wiz API
+Using the Wiz API
+Generate an API Token with Device Code Flow
+APIs and Required Permission Scopes
+Permission Scopes and Allowed APIs
+API Permission Scopes
+Developer Tools & Resources
+
+Wiz SDK for Python
+Python SDK Module Reference
+Postman Collection
+Handling API Errors
+Deprecated GraphQL APIs
+Resource External IDs
+
+Security & Trust
+Overview
+Architecture, Controls and Principles
+
+AI Principles
+Cloud Security Principles
+Data Protection Principles
+Runtime Sensor Security Principles
+System Architecture
+Business Continuity and Disaster Recovery
+Data Retention
+Shared Responsibility Model
+
+Securing Your Wiz Tenant
+Third Parties
+
+FAQ
+
+Private Previews
