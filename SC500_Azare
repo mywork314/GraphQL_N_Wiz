@@ -1,4 +1,21 @@
 Is addressing AI 
+STudy video 
+https://www.youtube.com/watch?v=wIk-YMOrQAU  
+https://www.youtube.com/watch?v=CoqZTt528ew   Databrick
+Need to add a GraphAPI server and DB  
+Need to add a powerBI and PowerAutomate 
+ServiceNow CMDB and FETCH ( will add to Wiz in the 
+How it works
+Wiz performs a deep fetch of the ServiceNow CMDB hierarchy. To ensure comprehensive coverage, Wiz targets primary CI (configuration item) tables and recursively includes all inherited subclasses. The fetch operation targets the following root tables and their children:
+Computer—cmdb_ci_computer
+Virtual Machine Instance—cmdb_ci_vm_instance
+VMware Virtual Machine Instance—cmdb_ci_vmware_instance
+Network gear—cmdb_ci_netgear
+To see information about existing resources enriched with data fetched from ServiceNowCMDB:   Go to the Inventory > Imported Assets.  can filter Origin = ServiceNOW
+The ServiceNow connector does not create new resources in Wiz. Instead, it enriches existing Wiz resources with additional metadata from ServiceNow CMDB. Therefore, assets appear on the Imported Assets page only if a matching resource already exists in Wiz and was successfully enriched. If no matching resources are found, no assets are displayed for Origin = ServiceNow.
+
+PULL will Access to Wiz with a role that has (W)rite permission on Service Accounts. 
+Will create integratph In wqiz   .. New Intergraph .. Name and Scnoe .. new service account created Under New Service Account Credentials, copy and save the Client ID, Client Secret, API Endpoint URL, and API Authentication URL to a local file or secure location for the next step.
 
 4 Domains 
 1. Identity, access, governance ... tools are   PIM  = KeyVault + Azure Policy 
@@ -29,7 +46,7 @@ Network Security    Entra private endpoints access = Virtual WAN
 Storage and Database
 Compute security and AL Security .
 Defender for Cloud + Defender EASM   https://learn.microsoft.com/en-us/azure/external-attack-surface-management/   , multicload 
-MS Seentinal + Secrity Copolit   SiEM 
+MS Sentinal + Secrity Copolit   SiEM 
 
 New is 
 Entra Agent ID 
