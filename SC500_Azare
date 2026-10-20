@@ -73,9 +73,14 @@ WAN Spoke topology Entra Private Access .. over VPN
        Virtual Network Manager .. ecurity Admin Rules .. (with Priority (number value)  + Action (allow + AlwaysAllow + Deny) Conditions 
        Security ADMIN RULES OVERRIDE NSG RULES ...This si TESTED 
        Enterprise-wide policy enformentment that bypasses indievdual team NSGs
-       NETWORK WATCHER --- Diagnose effective Securutiy Rules on NIC -- Effective Security Rules Blad Shows Merged NSG + ASG rules 
+       NETWORK WATCHER --- Diagnose effective Securutiy Rules on NIC -- Effective Security Rules Blad Shows Merged NSG + ASG rules  Trouble Networking traffic 
        +++++ there is a control ABOVE the NSG .. Azure Virtual Network Manager ... and these policies will OVERRIDE THE NSG  --- 
-
+-----  Private Access and Firewall Controls wrt networks traffic stays on MS Backbone BUT STORAGE still has Plubic IP NOT PRIVATE .............
+        Private Endpoint Vnet Subeith with Private endingpint NIC and NAT IP can talk wtih Azure Storage PublicIP public Endpoint .. Staorge gets private IP in Vnet. Pulbic access fully OFF ...>TRUELY PRIVATE 
+       EXAMP Serivce vs Private with Service Endpoint truly PRIVATE
+        Azure Firewall SKU Standard l3/4 filtering   FQDN rules Threat intelliggence     PREMIUM sku IDPS Intrusion Detection and Privention + TLS inspection + URL Caegories 
+        Firewall Manager .. manages Policies across multiple Firewalls ...Secuire Virtual Hub Architecture (Virtual WAN + Firewall ) 
+       App Gateway   regional + path-based routing                         ........   Azure FrontDoor is Global CDN level protoction with BGP 
 
 3. Secure Computer + AI ... Tools Entra Agent ID, Defender for AI + Foundry + JIT + AKS 
 --- Compute features 
