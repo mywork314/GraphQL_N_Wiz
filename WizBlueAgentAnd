@@ -1,0 +1,205 @@
+Blue & Green Agent Initiatives
+Discussed Blue Agent and Green Agent capabilities are available in Wiz4Gov to support automated threat response & remediation, with Red Agent coming this Q4.
+Documentation:
+https://docs.wiz.us/docs/green-agent
+https://docs.wiz.us/docs/ai-agent-for-soc
+Learning/Training Sessions:
+https://lms.training.wiz.io/agentic-ai-and-workflows
+https://lms.training.wiz.io/green-agent-deep-dive-on-behavior-and-architecture
+
+Application Detection and Response   will need a Defend and Sesor licenses for Wiz 
+RUN TIME SENSOR will 1. Track Events on Host Technology 2. Report on Senor providing input 3. Cloud Resource with ID tuype and Name subscriptionID   4.  K8S Context ClusterID Namespace Controllertype managing POD... Controller Name .. PodeName   5  Program Name   6 Process   7. Network Connection SourceIP Protocols outgoing/ingoing   8 FileEvent  .. Path + CRUD operation   9 RegistgryEvent 
+Requires either a Wiz Cloud Advanced or Wiz for Gov Advanced license. Learn about Wiz Cloud Licenses.
+
+Application Detection and Response (ADR) extends the Runtime Sensor into the application layer, adding visibility into how your applications execute functions alongside process and operating system telemetry. ADR shows the execution context needed to detect and investigate attack patterns not visible through infrastructure telemetry alone.
+
+When a supported runtime detection occurs, ADR enriches it with application Event Call Stacks and Application context tags that show application functions that would be otherwise undetected or hidden. This context appears directly in the detection details as you investigate existing threats and events in Wiz, helping you:
+
+Understand the application execution path that led to the detection.
+Identify the application context in which the detected activity occurred.
+Locate the relevant application functions for further investigation.
+How it works
+The Runtime Sensor observes supported runtime activity.
+ADR captures the associated application execution and analyzes the application call stack.
+ADR detects meaningful functions within the Event Call Stacks and uses context tags to surface meaningful executions.
+The resulting Application Call Stacks and Application context tags (when available) appear in the detection details, providing application-level context for investigation.
+Wiz Blue Agent and ADR
+Supported languages
+ADR application context is currently supported for the following languages:
+
+Runtime	Minimum version
+Go	1.21
+Python	3.6
+Node.js	16.0
+Support for additional languages will be added in future releases.
+
+Threat coverage
+ADR provides application-level visibility across several runtime Threat categories including:
+
+Application Exploitation – Analyze application execution paths associated with exploitation attempts and suspicious application behavior.
+Supply Chain – Provide application context for activity originating from third-party libraries, packages, and application dependencies.
+Malware – Detect malware that reuses known open-source offensive tooling, such as red-team frameworks, code injection libraries, or credential-harvesting packages. When these libraries aren't sufficiently obfuscated, they appear directly in the call stack and ADR surfaces them in the detection details.
+Prerequisites
+The Runtime Sensor must be deployed.
+Only the Kubernetes and Linux Runtime Sensors are supported.
+Linux kernel version 5.10 or later is required.
+Your application must use a supported language.
+Investigating ADR detections
+To investigate detections with ADR context:
+
+Go to Detections ↗ or Cloud Events ↗ that filter Origin by Wiz Sensor Matched Rules and Context Tag by the Application category to surface detections and events enriched with ADR context.
+Select a detection or event to view the Event Call Stack in the details panel. Application context tags describe the events or processes detected. When applicable, you can click a context tag to view the detected function(s) directly in the Process Tree.
+Select the relevant process to investigate. Some ADR detections include multiple Event Call Stacks — one per process in the detection's Process Tree. The event process shows the call stack at the point the event occurred. You can also view the parent process, which shows the call stack at the point its child process was executed, so you can trace how the execution chain originated. Event Call Stacks are available only for processes using a supported language.
+When applicable, you can click the function button directly from a process in the Process Tree to view the event call stack.
+
+Function detection examples
+ADR provides insights that help you identify threats embedded in application functions. The following examples show how you can use ADR to investigate and defend against threats, particularly remote code execution (RCE).
+
+Unsafe deserialization leading to RCE
+Prompt injection via agentic AI tool call
+Limitations
+ADR application context is available only for supported runtime detections.
+Availability depends on the Runtime Sensor observing the runtime activity.
+Event Call Stacks are available only for applications using a supported language.
+Supported Application context tags vary based on the application's execution flow and the detected activity.
+Runtime-aware detections and function-level capabilities are available only for supported detection types.
+
+
+The Wiz Runtime Sensor captures telemetry from your VMs and containers, giving you visibility into process executions, command-line inputs, DNS queries, and network activity, both internal and external.
+
+This telemetry is structured as Runtime Events, which you can analyze, filter, and export from the Explorer > Runtime Events ↗ page. To search for Threats, learn how to investigate Threats using Runtime Events.
+
+Event collection
+Runtime Event collection is enabled by default. To manage it, go to the Settings > Events > Event Management ↗ page.
+
+Once collected, the data is sent to Wiz for analysis in near real-time — every 5 minutes.
+
+Runtime Event collection is separate from Threat detection. If you leave event collection disabled, the Sensor's core detection still works: IOC-based signatures and behavioral Threat detection run independently, so the Detection Engine's coverage is not affected.
+
+How events are organized
+Runtime Events give you visibility into what actually ran on your VMs and containers, so you can investigate incidents and Threats independently of the detection engine. Wiz organizes events by the program that produced each one, so you can investigate each program as a whole rather than tracking individual processes. For step-by-step investigations, see Investigate Threats using Runtime Events.
+
+A program is a single executable, such as /bin/bash, running in one place: inside a container, or directly on a host (host activity belongs to a HOST context). Every run of that executable in that location counts as the same program, regardless of command-line arguments it uses. A program that runs over and over therefore appears as one entity you can follow over time, not thousands of separate processes.
+
+What this means when you work with Runtime Events:
+
+Process executions, DNS queries, network connections, and other activity are each reported as individual events. See the event types table for details.
+Each event includes the program that produced it, along with its parent and grandparent programs. The event's Process Tree shows this chain, so you can trace what led to the activity.
+What you see is a representative set of each program's activity, not every individual event. The next section explains the limits that shape this.
+
+Rate limits and deduplication
+A busy machine can generate a huge volume of runtime activity. To keep Runtime Events meaningful and manageable, the Sensor decides what to report on the machine itself, before anything is sent to Wiz. Two mechanisms control this: deduplication and rate limits. Both run on the Sensor, so events they drop never leave the machine.
+
+The Sensor's on-device detection is independent of both mechanisms. When the Sensor detects malicious behavior on a node, it generates a detection and sends it to Wiz separately from the Runtime Events stream.
+
+Deduplication and rate limits apply only to Runtime Events. They never suppress a Sensor detection or its response actions.
+When a detection fires, the Sensor reports the Runtime Events behind it, even if a limit would otherwise drop them. This includes not just the triggering event but the surrounding context, such as the program, its execution scope, and related activity. These events are linked to the detection, so you get the full picture and can pivot between events during an investigation.
+
+Event details
+Each Runtime Event (also called Runtime Execution Data) carries both cloud context (cluster, namespace, container, host, image) and runtime context (program, execution time, user ID, script name). For the full payload field reference, see the Runtime Event Streaming Schema. This section covers what that reference does not: the event types and their deduplication keys, and the execution scopes that tie events to a session.
+
+Event types
+The following event types are supported. The Uniqueness column shows the deduplication key the Sensor uses within a program.
+
+Event	Description	Uniqueness (deduplication key)
+DNS query	A DNS query made by the program. Noisy internal queries (.local, .internal, .internal.cloudapp.net, .arpa) are filtered out.	The domain name.
+Incoming connection	An inbound connection to the program, with the connection start time.	The remote (source) IP and port.
+Outgoing connection	An outbound connection from the program, with the connection start time and counts of successful and failed connections.	The destination IP and port.
+Process executed	A process the program executed, with the execution time.	The command line and user (euid).
+Socket listening	A socket the program listens on.	The local (listening) address and port.
+IMDS query	An instance metadata service (IMDS) query made by the program.	The query URL and IMDS version (v1/v2).
+File operation	A file operation by the program, such as access, create, modify, delete, or rename. Reported only when tied to a Sensor alert.	Not applicable.
+Registry operation	A Windows registry operation by the program, such as a change to a key, type, or value. Reported only when tied to a Sensor alert.	Not applicable.
+Execution scopes
+Execution scopes add session-level context to Runtime Events, identifying which session triggered the activity, such as SSH, SSM, or systemd. With an execution scope type or ID, you can trace all events from a single session — useful for understanding what happened during a specific SSH or SSM session.
+
+Learn how to investigate execution scopes in Runtime Events.
+
+Security principles
+Data redaction
+The Sensor redacts PII before Runtime Event data leaves the machine. This covers everything above, including command lines and process names. Redaction happens on the Sensor itself: sensitive data is never written to persistent storage and never leaves the machine.
+For example, a command line containing bash --arg aaa@example.com ... is redacted to bash --arg REDACTED_MAIL<66b38b98> ..., where 66b38b98 is a hash of the original value. This lets you compare redacted values without exposing the underlying data.
+Event retention
+Runtime Event data is retained for 30 days.
+Export Runtime Events
+You can access and export Runtime Events in several ways:
+Download the currently filtered events from the Explorer > Cloud Events ↗ page by clicking Save as > CSV file. Best for ad-hoc, filtered exports.
+Create and export a custom Runtime Events report from the Reports > Save Reports > Runtime Execution Data ↗ page. You can send the report to a storage destination and configure its schedule, scope, and filters. Best for scoped, recurring exports. Learn more about reports.
+Stream Runtime Events as newline-delimited JSON (NDJSON) to CSP object storage. Set it up with an Automation Rule, as described in Stream Runtime events to CSP object storage; see the Runtime Event Streaming Schema for the payload field reference. Best for high-volume or continuous export.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Green Agent
+Wiz Green Agent proactively analyzes high priority Issues to create a remediation strategy. Critical and high-priority Risk Issues are analyzed as they are detected, and an optimal remediation method is developed. For Posture Issues, the Green Agent provides prioritized remediation steps across grouped Findings. This enables security and cloud teams to accelerate remediation and focus their expertise on the most impactful risk reduction across the environment. You can also manually generate AI remediation steps for any Issue.
+The Green Agent automatically initiates an investigation process for the top critical- and high-severity Risk Issues, or high-priority Posture Issues on your tenant.
+
+During the investigation process, the Green Agent identifies the Issue's root cause, suggested assignee, and optimal remediation plan. The Agent mimics a human investigation process, using Wiz data and tools to analyze the Issue and determine the most efficient remediation strategy. The general process follows the steps for Risk Issue remediation, with additional steps for grouping Findings and prioritizing remediation for Posture Issues.
+
+You can use the Green Agent in a Wiz Workflow to retrieve Issue analysis information without triggering a new run.
+
+Automatic analysis with Workflows
+Wiz Workflows control which Issues the Green Agent analyzes automatically. The default Green Agent Issue Analysis Workflow triggers the Green Agent on new Risk Issues that don't have a Green Agent analysis yet. The Green Agent must be enabled for this Workflow to be available.
+
+To change which Issues the Green Agent analyzes, go to the Automation > Workflows ↗ page and edit the Workflows that trigger the Green Agent. You can modify the default Workflow or build your own with the Trigger Green Agent step. You can also run the analysis manually on any Issue.
+
+To see the Workflows that can trigger Green Agent analysis and the runs they triggered, go to Settings > Tenant > AI Features ↗ and select the Green Agent widget to open its details drawer. The drawer includes:
+
+Triggering Workflows—The Workflows that reference the Green Agent and can trigger runs, with each Workflow's last run, status, and creator. If no enabled Workflow references the Green Agent, the drawer shows a warning and a Create New Workflow button.
+Recent Workflow Runs—A log of the Green Agent runs that Workflows triggered.
+Learn more about Workflow run history.
+
+Green Agent output in Workflows
+You can use the Green Agent in a Wiz Workflow to Trigger Green Agent to run on a specific Issue or Get Green Agent AI Analysis without triggering a new run.
+
+For both Workflow steps, the Green Agent's analysis results are available as structured output fields that can be used to drive downstream actions. Results of these actions can drive the decision-making process for the next recommended course of action in the workflow. For example, you can automate Issue severity changes by adding an if condition to check the Green Agent's verdict for a severity change, and then trigger a remediation workflow if the severity has increased, or ignore the Issue if the severity has decreased.
+
+Risk Issue remediation
+Green Agent investigates critical and high-severity Risk Issues by analyzing the Issue's toxic combination of risk factors with full access to Wiz's Security Graph, raw telemetry, findings, and risk analysis capabilities.
+
+An Issue is created.
+The Green Agent initiates the investigation process, analyzing the Issue data (risk factors, toxic combinations, involved resources, attack paths, etc.).
+The Green Agent uses tools to retrieve additional Wiz data including:
+Resource metadata
+Cloud configurations
+Identity and access policies
+Network exposure
+Vulnerability details
+Sensitive data context
+Ownership information from the Wiz Security Graph
+Code to Cloud pipeline
+Workload Analyzer
+The Green Agent evaluates multiple remediation paths and determines the most efficient strategy to resolve the Issue.
+When the investigation process is completed, the Green Agent provides the following:
+Green Agent Verdict–A summary of the results can include remediation highlights, but other times the investigation can change Issue severity, or even suggest ignoring the Issue.
+Root Cause–The underlying risk factor(s) driving the Issue, breaking down the toxic combination into concrete components (e.g., misconfiguration, vulnerability, over-permissive identity, network exposure).
+Suggested Assignee–The results can include the recommended owner(s) to remediate the Issue, based on resource ownership, project mapping, and organizational context. You can automatically Assign to owner within this remediation step.
+Remediation Plan–Actionable, step-by-step remediation guidance tailored to your environment. The plan evaluates the most efficient fix for that Issue, and can include configuration changes or code updates. Steps that recommend a code fix have an option to create a VCS issue using the AI Coding Engine.
+Investigation summary–The highlights of how the AI agent arrived at its findings, including the data sources used, the tools applied, and the reasoning behind the suggested remediation plan.
+Remediation step ordering
+The Green Agent addresses the remediation plan by considering the Issue and applies a root-cause-first strategy. The following order represents a common strategy when all components are available:
+Assign to owner—When an owner is identified, this step comes first.
+Contain—Steps that restrict access or limit exposure, such as tightening firewall rules or isolating a resource. These steps are included only when external exposure is confirmed.
+Fix—Steps that address the root cause directly, such as code changes, configuration updates, or patches.
+Harden—Long-term recommendations that reduce future risk, such as defense-in-depth controls. These always come last.
+Posture Issue remediation
+Currently, the Green Agent supports Data, SAST, Cryptography & Post-Quantum Readiness, and Vulnerability Posture Issue types.
+Posture Issue remediation applies a strategy by grouping and prioritizing co-occurring Findings. The Green Agent attempts to resolve as many Findings as possible. Some Issues group Findings that share a common remediation or by Findings from a single code author or repository, even though each Finding may require a different fix.
+
+When a Posture Issue contains many Findings with different remediation paths, the Green Agent uses a prioritization method to select the most impactful remediation steps. This improves the Green Agent's analysis efficiency and allows you to gradually clear the backlog, rather than generating a single plan for all Findings at once. In some cases, the Green Agent is able to find a remediation strategy that addresses all Findings in an Issue. In all cases, the Green Agent:
+
+Groups Findings by a primary attribute that varies by issue type—for example, by resource for vulnerability Findings, or by file for secrets Findings.
+Sorts the groups by the number of Findings they contain.
+Analyzes the groups that cover the most Findings and provide targeted remediation steps.
+The Green Agent states the scope of its plan explicitly by reporting the number of Findings it addresses, out of the total number of open Findings in the Issue. After implementing the first set of fixes, you can re-run the Agent to continue clearing any remaining Findings.
+
+Each Green Agent run analyzes one Posture Issue. To work through multiple Posture Issues, run the Agent separately on each one.
