@@ -137,7 +137,7 @@ Exam   .. AZure Machine configuration is replaces legacy Guest configuration.  E
 Azure App Service allows for outbound VNet Integraion + inbound Private Endpoint to App Service  + Eary 3rdParty Oauth no code + Managed identity access keyvault without creditentials + TLS/SSL enforcement 
 Azure Logic Apps  Trigger --action - Response workflow .. Managed identity for connector authentication + Secure inputs/outputs masking sensitive data in run history + VNet Integration with Standard Plan  + IP restrictions on TRiggers 
 Azure Functions OAuth same as App Service + Network uses Vnet Integraion (premium plan) and Private endpoints(inbound)   + Durable functions call to starge accounts + Managed identity for downstream connections 
-API Management --- OAuth 2.0 validation policy (validates bearer toens) + Subscription Keys (primary access conrol)  + IP filtering policy + Rate Limiting/throttling policies  + clould cert authentication (backend)  backend encryption
+API Management --- OAuth 2.0 validation policy (validates bearer toens) + Subscription Keys (primary/firstlevel access conrol)  + IP filtering policy + Rate Limiting/throttling policies  + clould cert authentication (backend)  backend encryption
 supporting tools 
 APIM = security proxy layers for APIs... Multi-layered controls 
 Azure ARC to hybride role of Defender <> 
