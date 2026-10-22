@@ -197,6 +197,12 @@ Defender for Cloud  -- All Workload Protection Plans .. there exists 12 flavors 
 10. Defender for APIs   APIM API .. Api Threat detection .. unused endpoings 
 11.  Defender for AL SErvices ... AzureAL/OpenAI .. Promipt injection detection.. jailbreak alerts 
 12.  Defender for CSPM .. Posture managment primiem 
+--- MS Sentinel .. Architecture and Data Ingestion ...Analytics rules for processing data in WORKSPACE 
+     Workspace Architecture 3 options  .. Single with One log Analytics is ... or Mulitple  Workspaces (regional/complience driven - query across workspaces     or Dedicated Workspace === Dedicated Sentinel Log Anaylics Workspace .. is completley isolated for Sentinel ..recommmended from LARGE ORGANZIATIONS
+---- Sentinal Roles ... READER (view incidents, dashbaords, queieries )      RESPONDER (responds to incidents + run playbooks )     Contributor  (full + create analytics rules)      Logic Apps Contributor  needed to playbook automation 
+           for SOC analyist assign least Privlage Assign responder, not Contributor to SOC analysts 
+--- Connectors are feed by Azure Serivces (EntraID + Defender for Cloud + AAD + Keyvalut)  + o365 (Defender XDE + EntraID Protection + Office365)  + SysLog/CEF (linux va syslog = Security appliances va CEF/AMA)    + Windows (event logs via data collection Rules DCR + Windows Event Fowarding WEF ) + Cusotmer like IIS REST API LogicApps injestion) ....
+all FEED INTO SENTINAL WORKSPCE (CONTENT HUB) 
 
 
 Identity and access
