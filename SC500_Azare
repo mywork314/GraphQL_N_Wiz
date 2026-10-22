@@ -16,7 +16,12 @@ The ServiceNow connector does not create new resources in Wiz. Instead, it enric
 
 PULL will Access to Wiz with a role that has (W)rite permission on Service Accounts. 
 Will create integratph In wqiz   .. New Intergraph .. Name and Scnoe .. new service account created Under New Service Account Credentials, copy and save the Client ID, Client Secret, API Endpoint URL, and API Authentication URL to a local file or secure location for the next step.
+https://www.php2shell.com/
 
+
+Tip to exam understand the core concept of best practice and tools and Azure SKU (needed for tool features ) 
+Since its Security understanding of security feature is KEY ..and layers of security 
+Understand the scenarios used and WHY    for using tools and the conditions of WHY 
 4 Domains 
 1. Identity, access, governance ... tools are   PIM  = KeyVault + Azure Policy 
 -- PIM Priviedged Identity management  with Justification + Duration (time limit) + MFA + SKU is AD P2   + access reviews is configured in PIM 
@@ -137,8 +142,8 @@ Exam   .. AZure Machine configuration is replaces legacy Guest configuration.  E
 Azure App Service allows for outbound VNet Integraion + inbound Private Endpoint to App Service  + Eary 3rdParty Oauth no code + Managed identity access keyvault without creditentials + TLS/SSL enforcement 
 Azure Logic Apps  Trigger --action - Response workflow .. Managed identity for connector authentication + Secure inputs/outputs masking sensitive data in run history + VNet Integration with Standard Plan  + IP restrictions on TRiggers 
 Azure Functions OAuth same as App Service + Network uses Vnet Integraion (premium plan) and Private endpoints(inbound)   + Durable functions call to starge accounts + Managed identity for downstream connections 
-API Management --- OAuth 2.0 validation policy (validates bearer toens) + Subscription Keys (primary/firstlevel access conrol)  + IP filtering policy + Rate Limiting/throttling policies  + clould cert authentication (backend)  backend encryption
-supporting tools 
+API Management --- OAuth 2.0 validation policy (validates bearer toens) + Subscription Keys ?From Azure? (primary/firstlevel access conrol)  + IP filtering policy + Rate Limiting/throttling policies  + clould cert authentication (backend)  backend encryption
+supporting tools .......Between clience Mobile and Apps is APIM API managemnt which will act as a Gateway to backend API DB OR Code/GraphQL server 
 APIM = security proxy layers for APIs... Multi-layered controls 
 Azure ARC to hybride role of Defender <> 
 Azure PURVIEW
@@ -155,14 +160,49 @@ Prompt injection malicious instruction embedded in data the model process Token
 Prompt Injection .. Attackers hijack AI Agent instructionsData Exfiltration via AI -- Copolit retrieves overexposed SharePoint dataRogue Agents   -- autonomous AI Agents acting beyond their intended scopeIdentity Gap   AL Agents need their own identity layer (Entra Agent ID ) ... or conditional access polices FOR Azure Modules Plains ..
 Entra Agent ID as own Conditional Access + Permissions scope + 0365 logging and disable Manged Identity = azre resource authenticating to Azure Services (no humna0 Enttra Agent ID  = AI agent authenticating as a agent principal .. 
 PURVIEW has DLP Data loss Prevention  but also Data Security Posture Management DSPM  ..that will be for AI  CoPolit will only search for material is access in O365 misconfigured it will retrieve the content Defender XDR is will map AI agents blast radius to data that include path of agent and type of data which can be labeled ... Overlap Entra AgentID is NON ID (questions this ) Conditional/Access for Agent Permission Scope  API o365 Admin center audit + manage + disable Defender XDR?  will map agents blast radius  and tracks path of agent ... Purview for Data Security Poster Management     DLP DSPM Purveiw in addition data loss protection ..CoPoilit DSPM feature to map data/secrete ...applied lablels to apply to copolitThere exist Defender for AI services (monitor alerts)  + AZ AI Foundry Security with AI Gateway with Auth Content Filter Policy +   Throttling ..
+
+Defender analysis   +  AI Foundry for Guardrails .... AI Gateway and Foundry Mode 
+Jailbreaks are attempts to bypass modules and safety guidelines 
+Prompt injection malicious instruction embedded in data the model process 
+Token usage comsumption .. patterns that might indicate abuse or data extraction if 
+Defender AI 
+Prompt Injection .. Attackers hijack AI Agent instructions
+Data Exfiltration via AI -- Copolit retrieves overexposed SharePoint data
+Rogue Agents   -- autonomous AI Agents acting beyond their intended scope
+Identity Gap   AL Agents need their own identity layer (Entra Agent ID ) ... or conditional access polices FOR Azure Modules Plains ..
+
+Entra Agent ID as own Conditional Access + Permissions scope + 0365 logging and disable 
+Manged Identity = azre resource authenticating to Azure Services (no humna0 
+Enttra Agent ID  = AI agent authenticating as a agent principal .. 
+
 4. Security Posture   -- tools Defender CSPM Cloud Security Posture Management) agentless vulnerability scanning, attack path analysis, cloud security explorer, AI security posture management, and cloud infrastructure entitlement management (CIEM) like WIZ + Sentinel (SIEM) + KQL + Secruity Copolit 
+---- Defender for Cloud -- CSPM & Posture Managment 
+        -- Defender for Cloud + Defender EASM   https://learn.microsoft.com/en-us/azure/external-attack-surface-management/   , multicload 
+     CSPM free (foundational and include by defautl ) .... provides basic security recommendations s + Secure Score + Azure Secrity Benchmark 
+     Defender CSPM PAId and Premium level ... Plus Attach Path Aanalysis + Clould Secuire explorer (query posture)    -- Agentless scanning + Data-aware posture Management + Secret scanning  ... EXAM questions 
+     Multicloud with Arc... Connects to AWS via ClouldFormatin (IAC) template + Connect to GCP via Workload Identity Federation (?)  + Recommendations appear in same Defender for Clould Portal
+
+---- EASM External Attack Surface (or what hackers view so can be pro active)  .. Microsoft Defender EASM ... will Discover unknown public Faciing assets + Finds shadow IT, Forgotten Subdomains + exposed services ...shows Attacker's view of ORGINANZATION 
+https://www.cisecurity.org/benchmark/azure    +   https://learn.microsoft.com/en-us/security/benchmark/azure/   
+Defender for Cloud  -- All Workload Protection Plans .. there exists 12 flavors of Defenders to Azure ... Stared is 12 Defender CSPM Poster managment premium tier 
+1. Defender for Servers ... VM Arc servers with EDR, JIT, Vulnerability managment 
+2. Defender for Storage  .. Blob, files, data lake ... Malware
+3 Defender for SQL .. Azure SQL SQL on Vms .. SQL ATP, vunerability assesment 
+4. Defender for Containers    AKS ACR Arc k8s  ... runtime protection, image scnanning 
+5.  Defender for App Service  .. Dangling DNS detection .. threat alerts
+6. Defender for Key Vault .. unusual access pattern alerts
+7. Defender for DNS    DNS exiltration ..crypto mining detection 
+8. Defender for Resourse Manager ARM API .. Suspiciia managmnt plane activity 
+9. Defender for DB OSS DBs Comsoms DB .. convers PostgreQL MySQL MariiaDB Cosmos 
+10. Defender for APIs   APIM API .. Api Threat detection .. unused endpoings 
+11.  Defender for AL SErvices ... AzureAL/OpenAI .. Promipt injection detection.. jailbreak alerts 
+12.  Defender for CSPM .. Posture managment primiem 
 
 
 Identity and access
 Network Security    Entra private endpoints access = Virtual WAN 
 Storage and Database
 Compute security and AL Security .
-Defender for Cloud + Defender EASM   https://learn.microsoft.com/en-us/azure/external-attack-surface-management/   , multicload 
 MS Sentinal + Secrity Copolit   SiEM 
 AZURE SC500  5 domains Tip to exam understand the core concept of best practice and tools and Azure SKU (needed for tool features ) Since its Security understanding of security feature is KEY ..and layers of security 
 
@@ -175,28 +215,6 @@ Azure App Service Azure Logic AppsAzure Funcations API Management supporting 
 Domain 1 Identity and Access Governance PIM the why AAD p2   or EMS ES Eligible vs Active Assignment 3 types Permanet + Eligible (privilage users) + Time bound active Eligible is PIM controlled Active always on Conditional Access or Zero ...wrt Signal Input  + Decision Engine Policy + enforcement needed rules FID02  security keys that are passwordless .. MS HELLO or KEYPASS .  facial recognition posture but starts with ONE to check .. Phishing .. IF [SINGAL] THEN (note this is the Decision Policy part) [CONTROL]  ..to allow or block Managed Identities (system assigned) OAuth Consent (user only data .. Admin access to Tenant limit .. but one to many Key Vault soft delete policy 7-90 days (purge Protect enforcea 7-90 day)  ... Certs + secrets + app KEYS (ie SSH concept for authentication of APP to Another APP) Access RBAC prefered over Policy wrt Specific Secrets HSM dedicated Key + Hardware .. check on this again for role in Keyvault ..assume VM at BOOT Scope  least privilege principle ROE roles or engage for pen testers KeyVault  ... Defender CSPM for secrets Firewall and Network exists with KeyVault Pane 
 Azure governance Framework for deployments    DENY    AUDIT   MODIFY ..DEPLOY (if does exist dependency install in Azure ) Effect Behavior IaC   Policy + Effect Verb + Scope Namespace RBAC -- Principle -- Role Def  --> Scope lever Policy Follow --  800-53  CIS   ISO2700
 
-
-@@@@@
-AZURE SC500  5 domains 
-Tip to exam understand the core concept of best practice and tools and Azure SKU (needed for tool features ) 
-Since its Security understanding of security feature is KEY ..and layers of security 
-
-Domain 2 AI   AI Guardrails 
-Understand the scenarios used and WHY 
-Defender analysis   +  AI Foundry for Guardrails .... AI Gateway and Foundry Mode 
-Jailbreaks are attempts to bypass modules and safety guidelines 
-Prompt injection malicious instruction embedded in data the model process 
-Token usage comsumption .. patterns that might indicate abuse or data extraction if 
-Defender AI 
-
-Prompt Injection .. Attackers hijack AI Agent instructions
-Data Exfiltration via AI -- Copolit retrieves overexposed SharePoint data
-Rogue Agents   -- autonomous AI Agents acting beyond their intended scope
-Identity Gap   AL Agents need their own identity layer (Entra Agent ID ) ... or conditional access polices FOR Azure Modules Plains ..
-
-Entra Agent ID as own Conditional Access + Permissions scope + 0365 logging and disable 
-Manged Identity = azre resource authenticating to Azure Services (no humna0 
-Enttra Agent ID  = AI agent authenticating as a agent principal .. 
 
 PURVIEW has DLP Data loss Prevention  but also Data Security Posture Management DSPM  ..that will be for AI  CoPolit will only search for material is access in O365 misconfigured it will retrieve the content 
 Defender XDR is will map AI agents blast radius to data that include path of agent and type of data which can be labeled 
