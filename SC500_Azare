@@ -19,11 +19,14 @@ Will create integratph In wqiz   .. New Intergraph .. Name and Scnoe .. new serv
 https://www.php2shell.com/
 
 
-Tip to exam understand the core concept of best practice and tools and Azure SKU (needed for tool features ) 
+Tip to exam understand the core concept of best practice and tools and Azure SKU (needed for tool features ) .... Since its Security understanding of security feature is KEY ..and layers of security and the when and why to use them ..along with SKU and features that need extra configurations 
+**********Exam is not asking Specifics about the Tools but in what case senerio (EXAM state of MIND) to use them *****************  SEe FLOW DIAGRAM 
+RESOURCES @@@@@@@@to PRACTICE LEARN.microsoft.com SC-500T00   + Defender Skilling Challenges sponsor event + AKA.Ms/ExamDemo to help UI surprises is Sandbox   + KQL Detective Challenges (MS Security community gamified practice 
+RESOURCES @@@@@@@@@@@@  Ninja Training (for Sentinal + Defender + Free-tiered traing levers + Community )    ...   Community MS Q&A TEch Community boards   + Azure Security Subreddit Exam experience reports from recent -test takers 
 Since its Security understanding of security feature is KEY ..and layers of security 
 Understand the scenarios used and WHY    for using tools and the conditions of WHY 
 4 Domains 
-1. Identity, access, governance ... tools are   PIM  = KeyVault + Azure Policy 
+1. Identity, access, governance ... tools are   PIM (Priveledge access Managment and monitors JIT access)   = KeyVault + Azure Policy 
 -- PIM Priviedged Identity management  with Justification + Duration (time limit) + MFA + SKU is AD P2   + access reviews is configured in PIM 
  Three PIM acccess and frame as question senario for exam 
    Permanent Active (or always on wrt high ris and not really PIM  
@@ -56,6 +59,11 @@ Policies on the other hand play a slightly different role in governance. Azure P
       RESOURCE LOCKS ReadOnly (no change) vs Delete(no deletion) Locks will OVERRIDE RBAC  
       IaC Security contorls .. Policy + Effect + Scope (namespace of resource..) ... DEFINE and roleout Bicep/ARM/TerraForm ,, IaC apply and deployment Iime ...
       EXAM .. Etran Roles vs Auzre Roles work on seperate NAMESPACE 
+@@@@@@@@@ from prior notes @@@@@@@@@@@@@@@@@@@@@
+Identity and Access Governance PIM the why AAD p2   or EMS ES Eligible vs Active Assignment 3 types Permanet + Eligible (privilage users) + Time bound active Eligible is PIM controlled Active always on Conditional Access or Zero ...wrt Signal Input  + Decision Engine Policy + enforcement needed rules FID02  security keys that are passwordless .. MS HELLO or KEYPASS .  facial recognition posture but starts with ONE to check .. Phishing .. IF [SINGAL] THEN (note this is the Decision Policy part) [CONTROL]  ..to allow or block Managed Identities (system assigned) OAuth Consent (user only data .. Admin access to Tenant limit 
+Policy + Effect Verb + Scope Namespace RBAC -- Principle -- Role Def  --> Scope lever Policy Follow 
+
+
 2. Storage +  DB and Networking   ... tools storge Firewall + NSG + Privite Endpoints + Azure Firewall ==  me BGP Border Graud Protocol .. Architecure of 
  Storage and networking Exam will give scenario ...answer normally is best practice SAS token Account SAS  or Service SAS User Delegtaion SAS in Entra -- is the norm exam response Storage Firewall .. Disable Allow ALL    VNET + IP ..trusted Azure 
 
@@ -117,7 +125,7 @@ TLS inspection (also called SSL inspection or break-and-inspect) is the process 
        COPPILOT STUDIO AGENTS .. Real-time proctions buit-in content saftey + Conditional access via Entra AGENT ID for published agents .. FOLLOWUP topics 
 ------ VM Security Controls   Compute part 
        --JIT Just i Time VM Access flow .. User rwquet --JIT NSG rule created - Ports opens for X minutes and autocloses ... Configure in Defender for Cloud -- Defender for Servefrs Plan 2 required 
-      --  Azure Bastion ..is web based Jump server that allows for access to VNET with Private IP and VM with NAT 
+      --  Azure Bastion ..is web based Jump server that allows for access to VNET with Private IP and VM with NAT   ....Bastion -- Basic SKU and Standard SKU .. connects via the private IP endpoint on azure backbone plane VM 
        -- SSH/RDP port 3389 22 
         -- Disk Encryption us and roles 
               Azure isk Encription (ADE) for VM with biLocker  DM-Crypt with keys in keyvault 
@@ -203,33 +211,58 @@ Defender for Cloud  -- All Workload Protection Plans .. there exists 12 flavors 
            for SOC analyist assign least Privlage Assign responder, not Contributor to SOC analysts 
 --- Connectors are feed by Azure Serivces (EntraID + Defender for Cloud + AAD + Keyvalut)  + o365 (Defender XDE + EntraID Protection + Office365)  + SysLog/CEF (linux va syslog = Security appliances va CEF/AMA)    + Windows (event logs via data collection Rules DCR + Windows Event Fowarding WEF ) + Cusotmer like IIS REST API LogicApps injestion) ....
 all FEED INTO SENTINAL WORKSPCE (CONTENT HUB) 
+CONTENT HUB needs to be installed and used for BUILD in QUERIES help 
+Data RETENTION Interactgive (Hot) up to 2 years  Archive up 7 yers  but at COST 
+UNDERSTAND what is DEFAULT ENABLED and Features that will need to be ENBLED/COnfigured 
+------- KQL  </> OPERATORS KEY WORDS 
+        Key WORDS  Where to filter rows .. Projects is Select columns so only data from column viewed    Summmarize aggregate/count   Extend  add computed column     Join combbine tables (inner join default)        RENDER visualize output .. THERE are more Operators 
+SecurityAlert
+! where TimeGenerated > ago(24h)
+! where AlertSeverity == "High"
+! summarize count() by ProductName
+! render barchart 
 
+    Sentinal Analytics Rules ... ...scheduled Analytics RULES  runs KQL query on schuedule every 5 min to 14 days   Generates incidents   ++++ Near REAL-Time (NRT) RULES   Near-instant alerting + 1 minutes latency + limited KQL Operators 
+    Automation Rules vs Playbook     
+       AUtomation Rules .. lightwiedight no code    + Assign owner -= CHange  status, add tag, run playbook 
+       Playbook (Logic App)   full Workflow automation + notifyc teams, create ServiceNwo ticket, block IP 
+EXAM TIP KQL is tested will undestand the OUTPUT no just OPERATORS 
+---- Microsft Security Copilot ..  is new topics and poart of posture 
+     Roles and Permissions ... 
+          Entra Roles global Amdin/SecurityAmdin to configure      Security Copolit Roles are Owner (full admin) vs Contributore (can use, not configure)    Principle  Security Copolit has its own role system .. seprated fro Engrra Roles 
+          Workspace and Capacity   
+           Security Computre Units (SCUs) capacity units that determine processing power.  Provistioned per hour   Scale up/down as neeed    
+           Wokkspace configure geographc data storage connected Plugins, audit logs 
+         Plugins Ecosystem   various types 1. MS 1st Party .with MS Sentinel, Defender XDR, PUrview INUTNE ENTRA    2. ThirdParty which are partner solutions security tools + 3. Security Store Agents the Prebuilt autmoation agents   4 Customer Plugins or your own intgrations 
+WHAT SECURITY CoPOLIT DOES.. 4 topics but overview from others stuff 
+    Incident summariztion with natural languge output summary of incident from Sentinel
+    KQL Generation .. describing a threat .. Copolity wirte the KQL query for you 
+    Guilded Response .. step-by-step incident response recommendations 
+    Prompbooks ..saved repeatable security workfloows .. ((?? keywords 
+---- DEFENDER XDR + PUREVIEW AUti -- unified investigation all iw Portal (or MS BLADE) 
+       Defender XDR as the Unified Portal   URL Security.microsoft.com     and takes in puts from Defenders FOR <>  endpoints + Identity identity/ITDR + O365 + Cloud Apps CASB/Saas + MS sentinel   variious TELEMETRY 
+       Goes into Portal 
+       CAN QUERY PUREVIEW FROM PORTAL along with Cross Domain Investigations  (ME UNDERSTAND THE REPORTING FOR JOBS AN MANAGEMMENT ) 
+       PUREVIEW STUFF UG SKU for AUDIT Comparision AUdit Standard LIc + Audit Premium LIC 
+          Retention    180 Vs 1 year (+10 year addon 
+          Intelligent Insights NA vs  MailItemsAccessed
+          High-value events    Basic vs Expanded 
+          Accessible va     Comliance Portal  VS Defender XDR + Complience 
+       Cross Domain Incident Investigation Flow 
+           AL Alerts from Defender for AI ---> Incidnet created in XDR  ---> identity investigation of EntraID Blast Radius ---> Audit Trail in Pureview Audit --- Automated respoinse usiunbg in Sential Playbook 
 
-Identity and access
-Network Security    Entra private endpoints access = Virtual WAN 
-Storage and Database
-Compute security and AL Security .
-MS Sentinal + Secrity Copolit   SiEM 
-AZURE SC500  5 domains Tip to exam understand the core concept of best practice and tools and Azure SKU (needed for tool features ) Since its Security understanding of security feature is KEY ..and layers of security 
-
-
- 
-
-DOMAIN 3 VM + Containers + K8S + compute so .. Application Platforms are wrapped in JIT - opens/closes nsg for limited time access for ports RDP 3389 SSH 22 (over the NGS IP restricting port by IP) Bastion -- Basic SKU and Standard SKU .. connects via the private IP endpoint on azure backbone plane VM - have 3 types of disk encryptin 1. ADE at vm level DM-crypt + Bitlocker    and uses managed or own with keyvault 2. Encryption on HOST .. TEmp disk + Disk Cache (on host not VM?) 3. Confidential disk TPM (hardware) for confidential VM ... Defender for Server and SKU Defender for k8s 
-Azure App Service Azure Logic AppsAzure Funcations API Management supporting tools Azure ARC to hybride role of Defender <> Azure PURVIEWAzure Sential 
-
-Domain 1 Identity and Access Governance PIM the why AAD p2   or EMS ES Eligible vs Active Assignment 3 types Permanet + Eligible (privilage users) + Time bound active Eligible is PIM controlled Active always on Conditional Access or Zero ...wrt Signal Input  + Decision Engine Policy + enforcement needed rules FID02  security keys that are passwordless .. MS HELLO or KEYPASS .  facial recognition posture but starts with ONE to check .. Phishing .. IF [SINGAL] THEN (note this is the Decision Policy part) [CONTROL]  ..to allow or block Managed Identities (system assigned) OAuth Consent (user only data .. Admin access to Tenant limit .. but one to many Key Vault soft delete policy 7-90 days (purge Protect enforcea 7-90 day)  ... Certs + secrets + app KEYS (ie SSH concept for authentication of APP to Another APP) Access RBAC prefered over Policy wrt Specific Secrets HSM dedicated Key + Hardware .. check on this again for role in Keyvault ..assume VM at BOOT Scope  least privilege principle ROE roles or engage for pen testers KeyVault  ... Defender CSPM for secrets Firewall and Network exists with KeyVault Pane 
-Azure governance Framework for deployments    DENY    AUDIT   MODIFY ..DEPLOY (if does exist dependency install in Azure ) Effect Behavior IaC   Policy + Effect Verb + Scope Namespace RBAC -- Principle -- Role Def  --> Scope lever Policy Follow --  800-53  CIS   ISO2700
+TIPS CONCEPTS that MS IS TRICKS you OD
+Private Endpoint  NOT EQUAL SERVICE ENDPOING .. Serivice endpoing -- traffice on MS Backbone, storage has public IP    Private Endping Storage gets private IP turn of pbulic IP in networking
+KeyVault RBAC Modes vs Access Policy .. Access Policy is broad assigns vlautl level permissions  WHILE RBAC is to SPECIFIC secret/Key/cert RBAC is MS recommmendation 
+Secrity Admin Rules  Overrght NSG   is not layer Azure Virutal Network Manager Security Admin CAN NOT BE OVERRIDEN by NSG IE lower does not override 
+Agentless notes not probide Full Coverage  for SCANNING  EDR 
+Entra Agent ID is no Managed Identity .. managed indenty authenticates to Azure Services while Entra Agent ID AI Agent in Copolit Stuide/Foundary authetications as a NAMED Princible with its own Conditional Access polices 
+LEARN TO SPOT DISTRACTORS in QUESTION + CHECK CONTEXT of QUESTION ROOT   +Think LIKE THE EXAM + Understand MS Nuances 
 
 
 PURVIEW has DLP Data loss Prevention  but also Data Security Posture Management DSPM  ..that will be for AI  CoPolit will only search for material is access in O365 misconfigured it will retrieve the content 
 Defender XDR is will map AI agents blast radius to data that include path of agent and type of data which can be labeled 
 ... Overlap 
-Entra AgentID is NON ID (questions this ) 
-Conditional/Access for Agent 
-Permission Scope  API 
-o365 Admin center audit + manage + disable 
-
 Purview for Data Security Poster Management     DLP DSPM 
 Purveiw in addition data loss protection ..
 CoPoilit DSPM feature to map data/secrete ...applied lablels to apply to copolit
@@ -246,59 +279,5 @@ Immutability Policy WORM  Write once Read Many
 2. Legal Hold wrt deleted 
 3. Agency 
 
-SQL there exists Layers in Azure 1-6
-Note Understand what and why and when to use the layers 
-DB auditing    LogAnalysis    Storage    EventHub LiveStream 
-Ledgar Table .. Immutable    
-TDE (totale DB)  vs AlwaysEncrypt (masking at rows) 
-NSG Network
-ASG Application 
- ...can include ASG in NSG
-Virtual Network Manager .. Big picture of network
-Private Access and Firewall controll 
-SErvice have picture 
 
-VPN has been replaced with Entra Private access with controll Access evaluated and is treated Zero trust path 
-OVERLAP NETWORK 
-Private service endpoint 
-Firewall SKU price and features .. 
-AppGateway Layer 7 SKU 
-BGS the protocol for Web forgot nets 
-
-WAN Spoke topology 
-Entra Private Access .. over VPN 
-
-DOMAIN 3 
-VM + Containers + K8S + compute so .. Application Platforms are wrapped in 
-
-Defender for Server and SKU 
-Defender for k8s 
-
-
-
-
-Domain 1 Identity and Access Governance 
-PIM the why AAD p2   or EMS ES 
-Eligible vs Active Assignment 
-3 types 
-Permanet + Eligible (privilage users) + Time bound active 
-Eligible is PIM controlled Active always on 
-Conditional Access or Zero ...wrt Signal Input  + Decision Engine Policy + enforcement needed rules 
-FID02  security keys that are passwordless .. MS HELLO or KEYPASS .  facial recognition posture but starts with ONE to check .. 
-Phishing .. IF [SINGAL] THEN (note this is the Decision Policy part) [CONTROL]  ..to allow or block 
-Managed Identities (system assigned) 
-OAuth Consent (user only data .. Admin access to Tenant limit .. but one to many 
-Key Vault soft delete policy 7-90 days (purge Protect enforcea 7-90 day)  ... Certs + secrets + app KEYS (ie SSH concept for authentication of APP to Another APP) 
-Access RBAC prefered over Policy wrt Specific Secrets 
-HSM dedicated Key + Hardware .. check on this again for role in Keyvault ..assume VM at BOOT 
-Scope  least privilege principle 
-ROE roles or engage for pen testers 
-KeyVault  ... Defender CSPM for secrets 
-Firewall and Network exists with KeyVault Pane 
-
-Azure governance Framework for deployments    DENY    AUDIT   MODIFY ..DEPLOY (if does exist dependency install in Azure ) 
-Effect Behavior 
-IaC   Policy + Effect Verb + Scope Namespace 
-RBAC -- Principle -- Role Def  --> Scope lever 
-Policy Follow --  800-53  CIS   ISO2700
 
