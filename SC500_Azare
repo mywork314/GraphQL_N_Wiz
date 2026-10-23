@@ -1,28 +1,12 @@
 Is addressing AI 
-STudy video 
-https://www.youtube.com/watch?v=wIk-YMOrQAU  
-https://www.youtube.com/watch?v=CoqZTt528ew   Databrick
-Need to add a GraphAPI server and DB  
-Need to add a powerBI and PowerAutomate 
-ServiceNow CMDB and FETCH ( will add to Wiz in the 
-How it works
-Wiz performs a deep fetch of the ServiceNow CMDB hierarchy. To ensure comprehensive coverage, Wiz targets primary CI (configuration item) tables and recursively includes all inherited subclasses. The fetch operation targets the following root tables and their children:
-Computer—cmdb_ci_computer
-Virtual Machine Instance—cmdb_ci_vm_instance
-VMware Virtual Machine Instance—cmdb_ci_vmware_instance
-Network gear—cmdb_ci_netgear
-To see information about existing resources enriched with data fetched from ServiceNowCMDB:   Go to the Inventory > Imported Assets.  can filter Origin = ServiceNOW
-The ServiceNow connector does not create new resources in Wiz. Instead, it enriches existing Wiz resources with additional metadata from ServiceNow CMDB. Therefore, assets appear on the Imported Assets page only if a matching resource already exists in Wiz and was successfully enriched. If no matching resources are found, no assets are displayed for Origin = ServiceNow.
-
-PULL will Access to Wiz with a role that has (W)rite permission on Service Accounts. 
-Will create integratph In wqiz   .. New Intergraph .. Name and Scnoe .. new service account created Under New Service Account Credentials, copy and save the Client ID, Client Secret, API Endpoint URL, and API Authentication URL to a local file or secure location for the next step.
-https://www.php2shell.com/
-
+https://www.youtube.com/watch?v=wIk-YMOrQAU   --- SC500 practice qustions 
+https://www.youtube.com/watch?v=U1PO4LzPNfE   -- Source video for context below 
 
 Tip to exam understand the core concept of best practice and tools and Azure SKU (needed for tool features ) .... Since its Security understanding of security feature is KEY ..and layers of security and the when and why to use them ..along with SKU and features that need extra configurations 
 **********Exam is not asking Specifics about the Tools but in what case senerio (EXAM state of MIND) to use them *****************  SEe FLOW DIAGRAM 
 RESOURCES @@@@@@@@to PRACTICE LEARN.microsoft.com SC-500T00   + Defender Skilling Challenges sponsor event + AKA.Ms/ExamDemo to help UI surprises is Sandbox   + KQL Detective Challenges (MS Security community gamified practice 
 RESOURCES @@@@@@@@@@@@  Ninja Training (for Sentinal + Defender + Free-tiered traing levers + Community )    ...   Community MS Q&A TEch Community boards   + Azure Security Subreddit Exam experience reports from recent -test takers 
+RESOURCE  PDF 56 PAGES with LINKS to https%3A%2F%2Fkoushikmaji.com%2F%3Fdownload%3DSC500_Study_Guide_2026_Tech_With_Koushik.pdf&v=U1PO4LzPNfE 
 Since its Security understanding of security feature is KEY ..and layers of security 
 Understand the scenarios used and WHY    for using tools and the conditions of WHY 
 4 Domains 
