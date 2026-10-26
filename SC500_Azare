@@ -264,4 +264,38 @@ Immutability Policy WORM  Write once Read Many
 3. Agency 
 
 
+@@@@@ 
+What is VNet Injection?  
+Direct Placement: Moves service nodes or instances into a specific subnet of your Azure VNet.
+Private IP Space: Assigns private IP addresses from your network range directly to the service components.
+Deep Control: Differs from standard VNet integration (which typically allows outbound calls only) by giving full inbound and outbound network integration. [1, 2, 3 
+https://learn.microsoft.com/en-us/azure/virtual-network/vnet-integration-for-azure-services
+https://learn.microsoft.com/en-us/azure/databricks/security/network/classic/vnet-inject
+What is the difference between Azure VNET integration and VNET injection?
+
+Here is the detailed explanation about VNET injection and VNET integration.
+
+VNET Integration: It is mainly used to connect an Azure Pass service to a virtual network to enable communication between the Paas service and resources within the VNET.
+
+You can also use network security groups or route tables on this subnet to control all outbound traffic from your applications.
+
+It mainly used for Outbound traffic from the Azure PaaS applications, Follow the link by KapilAnanth-MSFT
+
+Example: When you enable VNET Integration for an Azure Web App, the web app can send traffic to Azure resources inside a VNET, but it doesn't directly receive traffic from the VNET. It's primarily for outbound connections.
+
+VNET Injection: VNET injection is a more specific term that often implies deploying an Azure service directly into a VNET subnet, making it part of the VNET's private IP address space.
+
+The virtual network injection allows an Azure resource to inject containerized workloads into an Azure virtual network so that resources in Azure can be accessed via a private IP address on the virtual network. After you've configured virtual network injection for a resource in a virtual network and enabled the resource as a target, follow the Virtual network injection (is Chaos link)  for more details.
+
+Example : The Azure VNET injection allows the Azure database server to be deployed into a VNET subnet, enabling private access from other resources within the VNET.
+
+https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-private-networking?tabs=azure-portal
+
+Key Benefits
+Private Connectivity: Connects services securely to databases, on-premises networks via VPN/ExpressRoute, or other Azure resources using private endpoints. [1, 2]
+https://learn.microsoft.com/en-us/azure/databricks/security/network/classic/vnet-inject 
+https://learn.microsoft.com/en-us/azure/virtual-network/vnet-integration-for-azure-services
+Traffic Control: Allows custom Network Security Groups (NSGs), user-defined routes (UDR), and firewalls to monitor and filter all traffic. [1]
+Isolation: Removes public internet exposure for backend computing workloads. [1]
+
 
