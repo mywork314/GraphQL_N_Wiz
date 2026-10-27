@@ -1,0 +1,230 @@
+
+State   Bureau -- Directorate -- Office      REVIEWHOME
+Excel Alt Enter = space  Team is Shirt Enter   Windows + End End of line white space Ctl + Home + end bottom   SHift End hightlights 
+Apps URL and SharePoint 
+https://m365.cloud.microsoft/chat       = Notebooks CoPolit CoPolit footnotes external sites + Anthropic on top of CoPolit GPT fedramp ??CoPolit studio  MCP model communication protocol   
+https://docs.wiz.us/dev/vulnerability-finding  
+WIZ Clt + ` (back tick) for Call History LOG API explorer .. When in AI took they are referencing QUERIES to build .. 
+Wiz is CNAP Cloud-Native Application Protection Platform or States Enterprise Platform Environment EPE for Cloud 
+Cyber Defense and Enablement CDE was ISSO and CIP 
+EVEREST (Enterprise Vulnerability Evaluation, Remediation, Exposure, Scoring and Tracking) is positioned as a proposed governance framework and operating process. 
+*****
+https://app.powerbigov.us/groups/me/reports/a578cf86-6d56-4c06-b9b3-eb3631eabe01/a6c8d3eb710cc85d8a04?ctid=66cf5074-5afe-48d1-a691-a12b2121f44b  Wiz Project script from Delacruz, Hauerlang D  Page 2 is Project Name Second column then type in Project name First column shows ID from Graphql
+https://app.powerbigov.us/groups/me/reports/d32de500-ab0c-42b3-868f-48f13e6c6ac8/a70594f77f260f5b31ca?ctid=66cf5074-5afe-48d1-a691-a12b2121f44b&bookmarkGuid=ce71ac44-859a-4443-b6e0-f397b2a84112  -- names and contacts
+https://app.powerbigov.us/links/aOHOmKByIb?ctid=66cf5074-5afe-48d1-a691-a12b2121f44b&pbi_source=linkShare&bookmarkGuid=26848fbd-852a-43d4-bebb-88bf444c4f5a ---  IMATRIX subscription view + subscription + ProjectID (for ArchAngel) 
+*****
+https://forms.cloud.microsoft/pages/responsepage.aspx?id=dFDPZv5a0UimkaErISH0Sy_2DXGH6I9AqF-YiNbDthZUNlhHR0FQUFJVQUQzWEdaMzFRVDJIRURCUCQlQCN0PWcu&route=shorturl   FunHouse and databricks 
+
+??????????????????????????????????????????????
+++++++++++++++++++++++++++++++++++++++++++++++
+#### WIZ talk .. Is a cloud-native Application Protectin platform CNAPP.. is under CDE Cyber Defense and Enablement
+From SLIDE .. Cloud Security Posture  + Map Cloud Subscriptions to Offices ....WIZ serves as DOS's preferred cloud security platform throughout the enterprise.​....EPE Cloud Subscriptions are already onboarded onto Wiz
+Ongoing integration with DOS GRC tool USAI/Archangel to facilitate ongoing system authorization.​
+Can intergrate with other .. EPE Enterprise Process Environments  GRC Governance, Risk, and Compliance  AnA tools  for ATO
+Single pane of glass - to view & manage cloud assets​  ....... Unified multi-cloud visibility​  ...Actionable Insights​  Findings prioritize the most critical security issues in your cloud
+Agentless scanning GraphQL API  
+Using Native Cloud logs .. AWS Guardduty (CloudTrail) and Azure Defender for Cloud (Siem Tool Sentinel) 
+On going scans of Cloud resources but 24 of computer resources SNAPSHOT of tagged deleted 
+Will be scanning OpenNet and Med and HIGH   ... MAGS/EACS and DoSDev NEN environment 
+Boards defaults to Ricks and will see latest published 
+Issues -- big picture BUT also POSTURE of Cloud and CVS and graph and remediation steps .. can close but will closed/reopened after scan 
+THreats , real-time visibility into suspicious and unusual activity happening in your environment that requires immediate attention.
+Finding  -- based on Vulnerbailty your tenable/qualys CVS 
+Inventory -- Subscriptions + Technologies + Containers/Kubes use the query to help find alias might match Cloud wording 
+Explorer to build customer query or use buildin 
+Policies   The rules that are applied to Findings 
+Automation 
+Reports is good for POSTURE Complience Posture filter FRAMEWORK 
+Azure  Default Managerment Group (for Tennant)  -- Subscription -- Resource Groups MS Sentinal or MS Defender  Azure Activity Logs(90 days and no application/data actions(reading file from storage)  at cloud level ..AzureAppSerivce for Apps/filessytems    
+Oracle  root or Tenancy -- BusinessUnit/Divisions -- Environments -- Workload/projects Rules of Compartment(containers) Hierarchy ie how things are organized (resourceGroup?)   Tenancy has own IAM that is nto conmpartment
+AWS =org -orgunit -- accounts   guardduty (is default) cloudtrail Sential managane 
+Google --org -folder -folder project SCC or Security Command Center 
+EPE Enterprise Platform Environments    
+EACS = Azure MAG and IL4 level for HIGH MOD .. EPE are step as MOd then EPE High for CSP Cloud Service Provider
+++++++++++++++++++++++++++++++++++++
+????????????????????????????????????????
+
+@@@@  Service NOW requests for OKTA and Wiz@@@  
+https://seirmprod.servicenowservices.com/dos?id=sc_cat_item&sys_id=f1f1ad7187a2bed03a02a8a60cbb3555    ServiceNow_Wiz onboarding
+https://seirmprod.servicenowservices.com/dos?id=sc_cat_item&sys_id=780a58f11b51b8102fea10ad9c4bcb32&sysparm_category=474211a41bb38050d30c9796bc4bcb43  == Wiz Okta Mapping 
+https://seirmprod.servicenowservices.com/dos?id=dos_cat_item&sys_id=c01c525b1b0dd890d30c9796bc4bcb8b  for OKTA ticket POC Myungchul Yi, Symptom Category as "OKTA" and is assigned to the group "SE-ICAM - Okta - Single Sign-On"
+@@@@
+http://fam.a.state.sbu/fam/04fah01/04fah010420.html  for new organization within DoS 
+https://accounts.skilljar.com/  is Wiz login to 
+https://accounts.skilljar.com/auth/domain/254r9p9moi0ni/login/select?next=%2Fauth%2Fendpoint%2Flogin%2Fresult%3Fnext%3D%252Fpage%252Fai-series%26d%3D254r9p9moi0ni https://academy.training.wiz.io/page/ai-series
+@@@@
+acknowledge button for OKTA action starts  ,,, wait as Token passed  https://state.okta.com/login/error/redirect?stateToken=02.id.jBnIpsDaj-Dl3mzONxq3_-8uNL-QwnDtlL84xu1z --- https://state.usai.io/api/authenticate/callback
+https://state.okta.com/sso/idps/DSSO?stateTokenExternalId=OCtDdzVLNGtBU3d2TDJ1V3BnRGZuemNZbElXVmVXWTgwbEJhL1NyVUl3Y2YwK0JjcUtOLzJqQkNBSGoycmhncA   if worked 
+https://state.okta.com/app/state_dtwizforgovernment_1/exkzfj6j2qzLfWKMz297/sso/saml?fromHome=true  --- Direct to Wiz but goes through 2-3 process prior to SSO Prompt for PIN --Then SSO validates --then validates to another server then logged in 
+https://saml.cloudappsecuritygov.com/saml/sso_login_consumer?orig_consumer=https%3A%2F%2F45255fed-d54a-4731-8322-be7378da849c-uq3o.auth-fips.us-gov-west-1.amazoncognito.com%2Fsaml2%2Fidpresponse&mcastenant=121636243
+Then 
+
+access.mcas-gov.ms/login  -- and if logged out of multiple session your logged in automatically .. so something is passed locally 
+FAI or NFAT training within State catalog 
+https://apps.gov.powerapps.us/play/e/default-66cf5074-5afe-48d1-a691-a12b2121f44b/a/039a21c9-68b2-46c4-b17c-bf763c3ba2be?tenantId=66cf5074-5afe-48d1-a691-a12b2121f44b&hint=3bbbcbd7-800e-48ad-882d-12b8ddc0963d&sourcetime=1767891650899
+
+https://us-east-1.console.aws.amazon.com/console/home?region=us-east-1  -- test outside of Okta 
+
+https://help.splunk.com/en/splunk-cloud-platform/search/search-manual/10.2.2510/search-overview/get-started-with-search
+https://help.splunk.com/en/splunk-cloud-platform/get-started/search-tutorial/10.2.2510/introduction/about-the-search-tutorial
+
+   
+https://docs.splunk.com/Splexicon:Searchprocessinglanguage
+https://state.okta.com/   
+https://state.usai.io/public  archangel 
+https://state.staging.usai.io/private/authentication/home    
+https://state.usai.io/public  is Archangel or https://state.usai.io/public In Okta is US AI 
+https://go.state.gov/logon/LogonPoint/index.html  is Go Virtual browser for DoS is Virtual Desktop Citrix hosted?? 
+
+https://docs.wiz.us/academymyapps.microsoft.com   or https://m365.cloud.microsoft/apps?home=1&auth=2  from any MS online apps More Apps 
+https://outlook.office365.com/mail/
+https://myapps.microsoft.com/   or https://m365.cloud.microsoft/apps/?auth=2 
+https://m365.cloud.microsoft/chat   
+https://go.state.gov/ Go manager browser 
+C:\Users\ShayBM\Documents\SharePoint Drafts\    +  C:\Users\ShayBM\ bs99
+https://state.splunkcloudgc.com/en-US/app/launcher/home  ===    CLIP Splunk dashboard link - for WIZ system Owner Dashboard
+-- https://state.splunkcloudgc.com/en-US/app/TA-wiz-addon-for-splunk/wiz_custom_dashboard -- Is custom dashboard and needs Rights to access
+https://state.splunkcloudgc.com/en-US/app/search/wiz_custom_dashboard?form.field1.earliest=-24h%40h&form.field1.latest=now  is LIVE 
+https://usdos.sharepoint.com/sites/DTCOISSO/wiz/Documents/Forms/AllItems.aspx   Wiz in SharePoint 
+https://usdos.sharepoint.com/:x:/r/sites/DTCOISSO/wiz/_layouts/15/Doc.aspx?sourcedoc=%7BDE396B93-A689-475A-949F-A54163B6EFE0%7D&file=130%20Controls%20Consolidated%20Wiz%20for%20Government.xlsx&wdOrigin=TEAMS-WEB.null_ns.rwc&action=default&mobileredirect=true  ATO  Name is 130 Controls Consolidated Wiz For Government 
+https://usdos.sharepoint.com/sites/DS/DS/CTS/TIE/ETD/SitePages/SSB.aspx   policy resources   SSB Document Library of our current published guides.
+
+
+
+CSP SOP doc   Wiz Enrollment Standards (final or in progress ) 
+https://usdos.sharepoint.com/sites/DTCOISSO/wiz/Documents/Forms/AllItems.aspx?id=%2Fsites%2FDTCOISSO%2Fwiz%2FDocuments%2FWiz%20Enrollment%20Standards%20%28In%20Progress%29%2FDraft%20Documents&viewid=643b04bc%2D3143%2D42e7%2Daaa4%2D7af862203e46  
+
+https://usdos.sharepoint.com/sites/kp   Default HOME Page 
+
+A&A site link 
+https://usdos.sharepoint.com/:x:/r/sites/IA/AA/_layouts/15/Doc.aspx?sourcedoc=%7B4A4CCD6C-3645-4A53-B14B-4B6DEE3C7361%7D&file=3061718329Systems_Inventory_Report_202600223.xlsx&action=default&mobileredirect=true&CID=9e9b0619-c53e-84c2-395a-31832aae1186&clickParams=eyJYLUFwcE5hbWUiOiJNaWNyb3NvZnQgT3V0bG9vayBXZWIgQXBwIiwiWC1BcHBWZXJzaW9uIjoiMjAyNjA0MDMwMDEuMTIiLCJPUyI6IldpbmRvd3MgMTEifQ%3D%3D
+https://usdos.sharepoint.com/:x:/r/sites/IA/AA  
+
+https://usdos.sharepoint.com/sites/DTCOISSO/wiz/SitePages/Wiz-Admin-Audit.aspx?e=4%3A8cd75d1b0d9e42a486e9106bbd9efa2b&web=1&sharingv2=true&fromShare=true&CT=1775569626887&OR=OWA-NT-Mail&CID=1999768a-f9e8-a6fc-6626-cdc924fac8c5&clickParams=eyJYLUFwcE5hbWUiOiJNaWNyb3NvZnQgT3V0bG9vayBXZWIgQXBwIiwiWC1BcHBWZXJzaW9uIjoiMjAyNjAzMjAwMDIuMTMiLCJPUyI6IldpbmRvd3MgMTEifQ%3D%3D&cidOR=Client&startedResponseCatch=true     #Haurerlang PowerBI SHAREPOINT Wiz tracking --- Users Account Left side expose all users Wiz CSP (not sure what criteria .. Then Right Department for users +  
+https://access.mcas-gov.ms/login  Wiz connector timing out .. from Okta 
+
+Wiz Runtime Sensor Downloads
+https://downloads.wiz.us/sensor/sensor_install.sh   
+https://downloads.wiz.us/sensor/wininstall.ps1   
+$GlobalConfig = Build-ConfigFromEnv
+$WizDomain = Get-WizDomain -BackendEnv $GlobalConfig["BACKEND_ENV"]
+$BaseInstallUrl = if ($env:WIN_INSTALL_BASE_URL) { $env:WIN_INSTALL_BASE_URL } else { "https://downloads.$WizDomain/sensor/winservice/" };
+$InstallerUrl = $BaseInstallUrl + "WizSensorService." + $env:PROCESSOR_ARCHITECTURE.ToLower() + "." + $GlobalConfig["SENSOR_VERSION"] + ".zip"
+https://downloads.$WizDomain/sensor/winservice
+https://downloads.wiz.us/sensor/winservice/WizSensorService.PROCESSOR_ARCHITECTURE.<>.zip
+Windows: https://downloads.wiz.us/sensor/winservice/WizSensorService.amd64.latest.zip
+Our yum repo is here:  https://rpm.wiz.us/projects/sensor-repos-fedramp/sensor-yum 
+If you install it you can pull the binary using yum install --downloadonly --downloaddir=/tmp/ wiz-sensor
+For debian you can use this repo and the following command:
+https://dpkg.wiz.us/projects/sensor-repos-fedramp
+cd /tmp && apt download wiz-sensor
+
+Annual TRAINING -- Myapps.microsoft.com or office365 longin  shaybm   NFATC Applications -- OpenNet Training Dashboard
+https://statics.teams.cdn.office.net/evergreen-assets/safelinks/2/atp-safelinks.html  just fun checks link first prior to redirect Link originates in Teams 
+
+###############################
+Trewon barry.shay@trewon.com 52401.BARRY.SHAY
+https://www.deltekenterprise.com/TREWON/portal.html or "system" enter "TREWONTEST" when prompted. 52401.barry.shay 2026bs
+https://trewon-cp.deltekenterprise.com/cpweb/masterPage.htm#A0
+https://outlook.office365.com/mail/  matches state Edge if fails Azure.portal.com
+https://www.deltekenterprise.com/TREWON/portal.html  to reset password 
+SamPrince
+ 
+################################
+learning or daily
+https://mcpl.aspendiscovery.org/WebBuilder/ResourcesList 
+https://www.youtube.com/@_JohnHammond/search
+https://docs.wiz.us/academy  -- will need login 
+https://daniel.haxx.se/blog   Daniel Sternberg and CURL project   AI Slop 
+https://www.youtube.com/@LowLevelTV   
+https://colab.research.google.com/
+https://academy.training.wiz.io/page/all-courses-catalog  
+https://csrc.nist.gov/publications/sp800   
+https://red.anthropic.com/2026/mythos-preview/
+
+Controls 101 ############
+https://csrc.nist.gov/projects/risk-management  SP 800-53v5.2
+https://csrc.nist.gov/Projects/risk-management/about-rmf/categorize-step  list sp 800-60 mapping 
+https://github.com/rise8-us/cato-playbook
+https://csrc.nist.gov/glossary/term/sc
+https://fam.a.state.sbu/ - FAM/FAH URL Everyone
+https://csf.tools/reference/nist-sp-800-53/r4/  or https://csf.tools
+SC-3.1 for SAAS nist FISMA  search https://csrc.nist.gov/glossary/term/sc
+
+
+https://learn.microsoft.com/en-us/MicrosoftTeams/trust-indicators   from Onboarding 
+ISO 27K Process 
+EO 13526    == 12 FAM 500  derived from EO 13526 
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@
+COMPUTER STUFF 
+>wsl.exe --install or 3 steps wsl --list --online  then  wsl --install/--web-download -d <DistroName>
+Right - Open in Terminal ... Win + X or Win+ R-->wt or ` (for Quake Mode) 
+>chrome --headless=new <URL>   .. or remotedbugging or puppeteer https://pptr.dev.. headless 
+TEXT with Image == Snipping edit in Paint -- in Paint extend image and "A" Text Type because can no edit later -- Box Text to move 
+Excel cell, press Alt + Enter on Windows or Option +
+Excel Text Box the move to Cell -- Create Text -- change color -- Add Link .. .. 
+Word to PDF the Open in Adobe -- Menu Save As PNG . All allow all extensions first ..CLOSE repeat .. 
+
+https://www.microsoft.com/en-us/security/blog/2026/04/01/mitigating-the-axios-npm-supply-chain-compromise/  good overview of JS library used in various website designs 
+https://www.nccoe.nist.gov/  join reads 
+https://www.youtube.com/watch?v=8vk5z9VAaBQ  Low levels approach .. Low level is Channel name 
+https://www.youtube.com/watch?v=m0XAPRAOJ8A do first low levels approach 
+https://www.youtube.com/watch?v=5FXrCHLAJZM  David Bromal 
+https://www.youtube.com/watch?v=4-7zcq5-cNA  John Hammond 
+https://www.youtube.com/watch?v=GECZRAXpRFE  Yaniv Hoffman Ghidra tool 
+
+POC DoS
+ADD Scott Campbell, Haquail Jusino,  Ranjan Kaparti + Terrance Wells + Charmyne Cyr + Vincent Eisinger  
+BESPIN CST ( was CS)  Jeswin George + Will VanderFeitz Nathan Spade  -- Jason Hart (oracle)  Scott Cohen + Charles Carrington + Ferdomamd "Butch" Leland 
+FAO (foreign affairs) 
+A7A   Rob :archAgnel" Goebel + Matthew Coughlin + Maurice Turner 
+CVS (Prism Cortex) is no 
+Dana Pierce Zach Frantz   Saumil Shah Kyle Anderson Riley Ganz  Iris  Alex(andra) Keenan (who was Shaila Ali) 
+Bilguun galmuntites  Kevin Hume  Carvill 
+Haurangland      Pranav   Angela Bui   and  
+Kase (UMBC   Nadine walks   David Mikosz poker  Disney guy is Ed Caffrey 
+A&A  Shuja (sho-jah) Mir + John Sweeney  --- meeting is Francis Cao  Karen Derringer lead 
+From CoPoint meeting was Michael Johnson DT/E/CISO   + Brian Morelan (MS support) Jessica (MS support?)   mention of GCC site 
+USAI archangel is : Robert Goebel + Matt Coughlin + Kerrie Wilson 
+
+cat notes.txt | grep "hello"
+cat {file-name} | head -n {number-of-lines} 
+
+| eventcount summarize=false index=* | dedup index | fields index      #for list of SPL index or Setting -- Index yep the ! is needed in front OR Settting --> Index   Then within Splunk IN the GRAY aread under the Search query will see EXPORT option 
+https://help.splunk.com/en/splunk-cloud-platform/search/search-manual/10.2.2510/export-search-results/export-data-using-splunk-web  
+SAVE AS ..as ALERT or Dashboard or ... 
+* Defaults to ([\r\n]+), meaning data is broken into an event for each line, delimited by any number of carriage return or newline characters.
+Ctl + end 
+
+index="wiz" action="deleted"  user.id="okta_BowdenA@state.gov"
+
+Jason Max Ferdinand
+ 
+Greg Kodish is CVS and its a network with Apps and is concerte
+
+Enrolling URL and quick copy and paste
+ISO Aaron   ISSO Alexandra   owner Ty G Hughes
+
+
+Talk NIST 800-53v5 in Issues ... odd way wrt type ... compliance Lens vs Vul
+Issues = CVS vulnerability + cloud Complience  ..... are lead up to NIST 800-53 
+Dashboards 
+Deployment 
+
+https://www.sysdig.com/learn-cloud-native/threat-detection-in-the-cloud-defender-vs-guardduty-vs-security-command-center
+Microsoft Defender, formerly known as Azure Defender, is a Cloud Security Posture Management (CSPM) and Cloud Workload Protection Platform (CWPP) 
+
+
+CONNECTOR DEPLOYMENT 
+Bash + Terraform + Manual   … AWS has Cloudformation (launch Cloudformation exits) Terraform (will provide main.tf file)  Manual 
+Management Group + Subscription +  Entra Only 
+Organization   or Account 
+curl -fsSL https://wizio-public-fedramp.s3-us-gov-west-1.amazonaws.com/deployment-v3/azure/cli/2635/wiz-azure.sh -o wiz-azure.sh 
+&&
+chmod +x wiz-azure.sh 
+&& ./wiz-azure.sh standard management-group-deployment --with-serverless-scanning --with-data-scanning --with-shadow-data --with-openai-scanning --wiz-managed-id=cb99039b-36ce-4436-a42c-c0d7eba08acb --with-aad-consent
+
+https://wizio-public-fedramp.s3-us-gov-west-1.amazonaws.com/deployment-v3/azure/cli/2635/wiz-azure.sh
+https://www.azadvertizer.net/azrolesadvertizer/189207d4-bb67-4208-a635-b06afe8b2c57.html
+Microsoft.Sql/servers/databases/write
