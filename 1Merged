@@ -1,27 +1,4 @@
-I’ve tailored Barry Shay’s resume to emphasize his 20+ years of systems engineering, DevOps, federal IT, cloud infrastructure, and hands-on security experience. The positioning highlights his transition into cybersecurity while leveraging existing experience with Wiz, NIST SP 800-53, ATO support, vulnerability management, security automation, and secure system configurations.
 
-The resume below is designed for Cybersecurity Engineer, Information System Security Engineer (ISSE), Cloud Security Engineer, DevSecOps Engineer, and Security Engineering/ATO support roles. It retains the experience and tools from the original resume while strengthening the security-focused language.
-
-Writing
-
-# BARRY SHAY
-
-Gaithersburg, MD | 301-767-6148 | bshay123@gmail.com | LinkedIn: \[Insert LinkedIn URL\]
-
-**SYSTEMS ENGINEER | CYBERSECURITY & CLOUD SECURITY | DEVSECOPS | RMF & ATO SUPPORT**
-
-DoD Secret Clearance | CompTIA Security+ | CompTIA Linux+ | Microsoft Azure Fundamentals | Azure Security (In Progress)
-
-## PROFESSIONAL SUMMARY
-
-Systems and Cloud Engineer with 20+ years of experience supporting federal government IT environments, enterprise infrastructure, application development teams, DevOps initiatives, and secure system modernization. Combines extensive systems engineering expertise with practical experience in cloud security, security configurations, vulnerability assessment, security monitoring, and compliance support across Department of Defense and civilian federal agencies.
-
-Experienced in supporting security and compliance activities associated with the Authorization to Operate (ATO) process, applying NIST SP 800-53 security recommendations, hardening AWS and Azure environments, and implementing security-focused automation and monitoring solutions. Hands-on experience with Wiz CNAPP, Azure Monitor, Kusto Query Language (KQL), Splunk, IAM, role-based access control (RBAC), Ansible, and application security testing tools.
-
-Effective technical liaison between developers, systems engineers, infrastructure teams, and cybersecurity stakeholders. Brings a strong understanding of system architecture, application dependencies, configuration management, infrastructure automation, and operational security to help translate security requirements into practical technical solutions. Well positioned to support security engineering, information system security, DevSecOps, and RMF/ATO initiatives in federal environments.
-
-## CORE COMPETENCIES  --- moved to Merge
-## TECHNICAL SKILLS  -- MOved to MERGE
 
 ## PROFESSIONAL EXPERIENCE
 ### Security Engineer
@@ -35,8 +12,7 @@ Support cloud security operations and security engineering initiatives by helpin
 - Apply systems engineering knowledge to cloud security challenges, helping bridge the gap between infrastructure configurations, operational requirements, and security objectives.
 
 ### Systems Engineer
-**Consulting Services Group**\
-December 2024 – May 2025
+**Consulting Services Group**\  December 2024 – May 2025
 Designed, tested, and evaluated virtual desktop infrastructure solutions using Nutanix and Azure Virtual Desktop, with emphasis on secure configurations, performance, usability, and operational requirements.
 - Configured Azure virtual machines in alignment with applicable NIST SP 800-53 security recommendations.
 - Developed Azure Monitor queries and automation workflows to support virtual machine startup when users authenticate through Microsoft Entra ID.
@@ -46,8 +22,7 @@ Designed, tested, and evaluated virtual desktop infrastructure solutions using N
 - Conducted iterative configuration and performance testing to improve usability, reliability, and alignment with user requirements.
 
 ### Systems Engineer
-**Joint Service Provider (J6), Department of Defense | Visioneering LLC**\
-April 2024 – September 2024
+**Joint Service Provider (J6), Department of Defense | Visioneering LLC**\ April 2024 – September 2024
 Supported infrastructure modernization and virtualization initiatives through VMware architecture design, implementation planning, and technical knowledge transfer.
 - Supported VMware architecture and deployment planning for evolving enterprise infrastructure requirements.
 - Trained support personnel on VMware deployment practices, technical procedures, and infrastructure support considerations.
@@ -56,8 +31,7 @@ Supported infrastructure modernization and virtualization initiatives through VM
 - Developed familiarity with VoIP and network integration protocols, including IEEE 802.1Q and Session Initiation Protocol (SIP), supporting future-state infrastructure planning.
 
 ### Systems Engineering Technical Assistance (SETA)
-**Chief Digital and AI Office (CDAO), Department of Defense | Sancorp Consulting**\
-August 2022 – January 2024
+**Chief Digital and AI Office (CDAO), Department of Defense | Sancorp Consulting**\ August 2022 – January 2024
 Provided technical research and architecture support for emerging artificial intelligence and digital initiatives within the Department of Defense.
 - Researched and tested prompt engineering techniques to evaluate large language model output quality and potential mission applications.
 - Provided technical architecture input to support secure system design and alignment with DoD operational requirements.
@@ -66,8 +40,7 @@ Provided technical research and architecture support for emerging artificial int
 - Applied systems engineering principles to assess architecture, integration, and operational considerations in evolving technology environments.
 
 ### Cloud Engineer
-**Department of State | Applied Information Science (AIS)**\
-April 2021 – August 2022
+**Department of State | Applied Information Science (AIS)**\ April 2021 – August 2022
 Supported cloud migration and infrastructure modernization through Azure DevOps, infrastructure automation, monitoring, and technical documentation.
 
 - Built and maintained Infrastructure as Code pipelines using Azure DevOps to streamline Azure virtual machine deployment and improve consistency across infrastructure environments.
@@ -78,8 +51,7 @@ Supported cloud migration and infrastructure modernization through Azure DevOps,
 - Helped bridge infrastructure engineering and operational monitoring by combining automation, configuration knowledge, and system-level troubleshooting.
 
 ### Senior Systems Engineer
-**USAID | AINS Inc.**\
-May 2020 – April 2021
+**USAID | AINS Inc.**\ May 2020 – April 2021
 Delivered cloud engineering, infrastructure automation, and application modernization support for enterprise systems within USAID.
 
 - Mentored junior engineers on AWS and Azure implementations, promoting technical knowledge sharing and consistent engineering practices.
@@ -90,12 +62,8 @@ Delivered cloud engineering, infrastructure automation, and application moderniz
 - Applied systems engineering and automation practices to improve consistency, documentation, and supportability across environments.
 
 ### Systems Engineer
-
-**DMA & NIMH | OmniTec Solutions / Gryphon Technologies**\
-2018 – 2020
-
+**DMA & NIMH | OmniTec Solutions / Gryphon Technologies**\ 2018 – 2020
 Supported secure infrastructure, cloud-enabled systems, and DevOps improvements for federal health and media organizations.
-
 - Hardened AWS EC2 environments using IAM, Ansible, and AWS CloudFormation to strengthen access controls and improve configuration consistency.
 - Developed Splunk queries to identify potentially suspicious activity and automatically email the team with relevant findings.
 - Conducted application security testing using Burp Suite and OWASP ZAP to identify potential application weaknesses and support DevSecOps integration.
