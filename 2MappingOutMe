@@ -1,5 +1,5 @@
 Mapping out me starts from looking at myself and being true to about triggers anxieties and my past and present along with antisipation of future.    
-https://docs.wiz.us/api/auth/token   ... huntress.com  hackers pretecting your environment but AI agents are new norm but maybe whitepapers published .. same with Wiz white papers published 
+ ... huntress.com  hackers pretecting your environment but AI agents are new norm but maybe whitepapers published .. same with Wiz white papers published 
 TINY DESK LIVE event .. 
 ANxioety over apprension
 Goal is to replax and socialize -- share with others -- smile --- and catch myself before I spiral back 
@@ -190,23 +190,8 @@ People to follow for keeping
 
 
 
-
-
 MUSIC .. Wet Legs URmum yelling + Prince My name is + Dove + Kiss live Presily park    Jc Chasez   + Hadestown ComeHomewithme/WeddingSong  Billy STring Gild LIllty   Les Miserbiable Black/blue 
 
 
 
-curl -fsSL https://wizio-public-fedramp.s3-us-gov-west-1.amazonaws.com/deployment-v3/azure/cli/2791/wiz-azure.sh -o wiz-azure.sh && chmod +x wiz-azure.sh && ./wiz-azure.sh standard management-group-deployment <<>> --with-serverless-scanning --with-data-scanning --with-shadow-data --with-openai-scanning --wiz-managed-id=cb99039b-36ce-4436-a42c-c0d7eba08acb --with-aad-consent
 
-Keep --with-aad-consent (Default): When the administrator running the deployment script has sufficient Entra ID privileges (such as Global Administrator or Privileged Role Administrator) to grant tenant-wide admin consent.
-Remove --with-aad-consent: If the user deploying the connector only has Azure RBAC rights (e.g., Subscription/Management Group Owner) and lacks Entra ID admin rights, including the flag will cause the script to fail on the consent step.
-In this scenario, remove --with-aad-consent to deploy the Azure RBAC resources first.
-A Global Administrator can subsequently grant Entra ID consent by running the script with the --with-aad-consent-only flag, or manually in the Azure Portal (Microsoft Entra ID > Enterprise Applications > wiz-<tenant-id> > Security > Permissions > Grant admin consent).
-
-I'm writing with an update on the agreement requirements for the Wiz for Government–DECCS connection. DT Agreements previously determined that the connection doesn't require an Interconnection Security Agreement (ISA), and the group identified a Data Sharing Agreement (DSA) as a possible requirement. Earlier today, I met with the Bureau of Diplomatic Technology's Identity Services, Data Analytics & Assessment (DAA) office to assess what the technical connection and data sharing require.
-
-DAA determined that the connection requires a DSA. Under 20 FAM 902.2-2, a DSA is required in specific situations, and two of them apply here. First, Wiz for Government will connect directly to DECCS, which makes this a system-to-system connection. Second, DECCS data is sensitive and has explicit limits on how it can be used, shared and stored.
-
-To complete the DSA, we'll hold a working session with all stakeholders, including DAA, on Thursday, November 5. DAA will walk the group through the requirements, and we'll work together to gather the information needed for the DSA documentation. I'll send an invite shortly with the data-sharing questionnaire, the template and the applicable internal data-sharing directive attached.
-
- 
