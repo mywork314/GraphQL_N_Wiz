@@ -1,0 +1,35 @@
+Attack Surface Management
+Frequently Asked Questions
+December 2025
+This FAQ document is designed to help customers understand what Wiz’s Attack Surface Management
+services (ASM Services) are and why some ASM Features require additional legal terms.
+What are ASM Services?
+Wiz’s ASM Services validate the exposure level of ports and IP addresses in your environment that are
+potentially accessible from the public internet to determine their level of exposure and remove false
+positives.
+For example, Wiz’s ASM Services may: (i) test whether a resource is accessible from the public internet
+(ii) test authentication methods on a customer’s resource log-in page by using default or weak
+credentials to identify security issues (iii) validate the exploitability of vulnerabilities or
+misconfigurations in a customer’s resource using various techniques. More information about Wiz’s ASM
+Services can be found in the Wiz Documentation here.
+Wiz's ASM Services also allow the customer to provide custom domain names or IP addresses for
+scanning.
+Why would I need Wiz to scan additional IP addresses or domain names?
+Customers may utilize this feature to scan resources that Wiz Cloud offering doesn't scan, such as on
+premises resources that are potentially open to the public internet.
+What are potential changes or disruptions to the customer’s resources that could occur by using
+ASM Services?
+The ASM Services may add records, files or users to the customer’s resource in order to validate a
+potential vulnerability. Such records, files or users will be created with strong passwords and named in
+a way that clearly indicates that they were created by Wiz. In rare cases, customers may experience
+unplanned downtime if the ASM Services exploitability validation process is identified by other security
+tools as a threat, resulting in such security tool shutting down access to the resource being scanned,
+or due to numerous concurrent requests.
+Why does Wiz require these additional Wiz Attack Surface Management Terms for some ASM
+Features if the Customer already has a WSA in place with Wiz?
+Some ASM Features allow the Customer to have complete decision and control over which domains or
+IP addresses the ASM Services scan. In some cases, unauthorized scanning of third-party resources
+could be violative of laws regulating the unauthorized access to computers. In order to ensure that the
+ASM Services do not violate such laws, Wiz has put in place these additional terms to ensure that Wiz
+customers obtain proper consent and authorization from third parties prior to using the ASM Services
+on any third party’s domain or IP address.
