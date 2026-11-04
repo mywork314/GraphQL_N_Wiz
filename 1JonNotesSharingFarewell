@@ -1,4 +1,5 @@
 This ai a summary of my thoughts maybe for others to read but for me to give Jon a voice at after his life ended. 
+Since I am not him and can only share our shared experiencs 
 
 I'll start with that Jon dug him self into a hole that he needed extra help getting out of. It was learning that others have the same issue and he is not alone.  
 When your young and in school you are sheltered from the truth that awaits after school.  
@@ -30,3 +31,18 @@ https://bg.usembassy.gov/wp-content/uploads
 https://app.wiz.us/settings/scanners/attack-surface#attack-surface-scan-source-custom-targets   
 https://docs.wiz.us/docs/red-agent#safety-and-guardrails
 https://fam-usdos.msappproxy.net/FAM/20FAM/20fam090202.html   data access compliance statndads 
+# Scanners
+
+The following settings pages in the Wiz portal are used to customize how Wiz scanners behave:
+- [Agentless FIM](https://docs.wiz.io/docs/fim-settings)   Wiz Agentless FIM provides visibility into file changes in your virtual machines, helping you detect unauthorized modifications and potential security threats.
+- [Attack Surface Scanner ('Dynamic Scanner')](https://docs.wiz.io/docs/attack-surface-scanner)  The Attack Surface Scanner periodically checks and validates the status of potentially exposed ports and IP addresses in cloud network configurations, confirming public internet accessibility and identifying misconfigurations, while also assessing the exposure level of application endpoints.
+- [Cloud Configuration](https://docs.wiz.io/docs/cloud-configuration-settings)    Wiz offers cloud and code resource scanning for misconfigurations, featuring near real-time scanning and custom Rego package management to tailor cloud security posture management (CSPM) needs.
+- [CSP Scanner Sources](https://docs.wiz.io/docs/csp-scanner-sources-settings)      Wiz allows integration with CSP scanning tools to import security scan results, supporting services like Microsoft Defender for Cloud, Amazon Inspector, and Amazon Macie, each requiring specific permissions
+- [Custom Detection](https://docs.wiz.io/docs/custom-detection-settings)   The document provides instructions on customizing Wiz's scanning settings, including defining custom IP ranges, setting malware exclusion rules, detecting specific files, and managing application endpoints for inactive machines, with a focus on enhancing security and exposure analysis.
+- [Data Security](https://docs.wiz.io/docs/data-security-settings)   Wiz automatically onboards public AKS, GKE, and EKS clusters using the same permissions from their CSP-specific Cloud Connectors. AWS Connectors created before September 2024 require manual opt-in. Other cluster flavors need dedicated Kubernetes Connectors. You can also turn on deployed image scanning for each Kubernetes cluster type.
+- [Identity Security](https://docs.wiz.io/docs/cloud-entitlements-settings)    Configure scanning mode, frequency, image tag limits, age filters, pattern filters, and private base image detection for cloud-based container registries, and turn on deployed image scanning based on Sensor events.
+- [Kubernetes Connector](https://docs.wiz.io/docs/kubernetes-scanner-settings)    
+- [Registry Scanner](https://docs.wiz.io/docs/registry-scanner-settings)   
+- [Secrets Security](https://docs.wiz.io/docs/secrets-security-settings)
+- [Vulnerability Scanner](https://docs.wiz.io/docs/vulnerability-scanner-settings)    Wiz provides comprehensive vulnerability scanning for applications by analyzing library dependencies and sub-dependencies, with customizable settings that apply tenant-wide.
+- [Workload Scanner](https://docs.wiz.io/docs/workload-scanner-settings)     The document outlines the functionalities and configurations of the Workload Scanner, which scans cloud workloads like VM disks and serverless functions, and provides detailed instructions on enabling and configuring various scanning features, such as non-OS disk scanning, AWS Lightsail and Lambda scanning, and custom tagging, to enhance security insights and manage scanning processes efficiently.
