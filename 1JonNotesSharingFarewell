@@ -1,50 +1,12 @@
-This ai a summary of my thoughts maybe for others to read but for me to give Jon a voice at after his life ended. 
-Since I am not him and can only share our shared experiencs 
-
-I'll start with that Jon dug him self into a hole that he needed extra help getting out of. It was learning that others have the same issue and he is not alone.  
-When your young and in school you are sheltered from the truth that awaits after school.  
-School grades you on a scale of a-f on various subjects, based on a teach the politics that is hidden within the system.  The politics of assigning inflated grades to ensure money feeds into the school.  The bias of the teachers pet.  Being human, teachers are human and faced with day to day issues along with the struggle to pay the bills and have time for family.  They are faced with the options of others and trapped wtih rules that the people do not half to follow. 
-
-Jon was my younger brother and together we grew up without a dad.  Mom tells the story that is burned into her head that one day Charles said he was going to visit, Jon waited patiently and I moved along after a time period when I assumed that I needed to move along because he was not coming.  Jon waited... not sure if he said anything to mom and as time moved along he moved along to.  Something that is lost .... he experienced live without Charles.  Mom never released that image and used that image.  There were lots of layers to figure out Jon and the big thing is to be my his side and not let me fall back into his own patterns. 
-The Edmonston house and room was the right price but also created a world/view of himself as someone that will always be in the hole he created. On the good side he had a job but he was also changing for the negative without his knowledge.  The job was a outreach but the body was changing and needed that extra energy from others to continue.  Hearing that we need you and what can you offer to help us move others.  
-With Dr Perlman he was working towards moving forward with the layers.  It was a long time and he was given a father or male figure that allowed him to escape mom.  At the same time was creating the world that a college degree was good and a show a accomplishment.  Was never told that it was just the start of life and needed to work though the small takes that allowed him to grow slowly with confidence.  
-
-Going through this papers he organized everything and maked things as needed.  He needed to speak up and have saftey net in a person to open up to that he does not know what to do.  He followed mom advice and did what she does.  But at the same time the computer and digital.   Like mom he did not recycle specific types of papers.  Bank was one but the Housing stuff that was extended and the prior year was needed to write up the form.  
-Has a read through his notes I say the stuggle and the joy and finding his own space. He would writing in a calander his daily tasks concerns and actions for the day.  
-
-
-We listened to music downstairs.  He was the star athlete because of his early development.  But he was the star athlete and enjoy the fame .... his body was able fill a role but the skills of playing the sports was a different.  In junior high and high school I know that had soe friends that he would talk with and he had a job.  The job was really the sign something was changing, he could do the job but needed specicic direction afterwards.  
-He found friends in Wilder AZA showing he had drive to seperate from me and my Brandies connection.  For me Brandies was a place that blindly enjoy with older members and not connecting to my peers.  The naive young person that was not convident in HS and felt I had no friends.  Aneer was doing in a direction and Larry moved there was a void and need a little guidance that Jon also needed.  
-The role of parent is giving of your time and love.  AZA was a place of money and something that we never had.   Traveling was to Albany, Canada, and one Amish country.  We were close to Hochbergs and visiting was a highlight because the cousins shared their time with us.  
-
-Jon 
-
-https://www.youtube.com/watch?v=Is-OxByUl_A&t=623s  Communication is giving of topic that allow ..voice and sound you bring to make it sensire to you ...practice and make it easier to understand ..giving emotional meaning/energy .. hearing the words and not feeling the feeling when someone is talking --- need to express emotions in words and tone so others can be there for you and understand ...the following is something I need to follow is never assume and great someone with the optimism that they will be a friend or have something to share assuming WARM ..break the outpolit mode .Been busy lately ..been good or whats been good .. ask wtih question to trigger thinking 
-Think of generosity as from of time and energy .. adding more value to conversation then jsut the words th VIB ...Vinh Giang is High Low Buffalo (somehting unique about you)  is his opening and phrase as a game 
-This cue is the most important one please pay attention .. and will see focus expression ...goal is also to lead person past the hesitation and well let me tell his another way or I tried this but failed... Bring Energy with TONE and expression as a form of graditude 
-Vinh Giang appreach  ... Vanessa looks under the eye the lid part of the skin to see if users is listening Eye closed when focused .. at 15 minutes wi
 
 https://www.youtube.com/watch?v=whbpsp2pU1Q  
 
 app.powerbi.com  .. needs MS Fabric account which is Azure 
 
 https://www.youtube.com/watch?v=Pl8n6GaWEo0
-https://bg.usembassy.gov/wp-content/uploads
-https://app.wiz.us/settings/scanners/attack-surface#attack-surface-scan-source-custom-targets   
-https://docs.wiz.us/docs/red-agent#safety-and-guardrails
-https://fam-usdos.msappproxy.net/FAM/20FAM/20fam090202.html   data access compliance statndads 
-# Scanners
 
-The following settings pages in the Wiz portal are used to customize how Wiz scanners behave:
-- [Agentless FIM](https://docs.wiz.io/docs/fim-settings)   Wiz Agentless FIM provides visibility into file changes in your virtual machines, helping you detect unauthorized modifications and potential security threats.
-- [Attack Surface Scanner ('Dynamic Scanner')](https://docs.wiz.io/docs/attack-surface-scanner)  The Attack Surface Scanner periodically checks and validates the status of potentially exposed ports and IP addresses in cloud network configurations, confirming public internet accessibility and identifying misconfigurations, while also assessing the exposure level of application endpoints.
-- [Cloud Configuration](https://docs.wiz.io/docs/cloud-configuration-settings)    Wiz offers cloud and code resource scanning for misconfigurations, featuring near real-time scanning and custom Rego package management to tailor cloud security posture management (CSPM) needs.
-- [CSP Scanner Sources](https://docs.wiz.io/docs/csp-scanner-sources-settings)      Wiz allows integration with CSP scanning tools to import security scan results, supporting services like Microsoft Defender for Cloud, Amazon Inspector, and Amazon Macie, each requiring specific permissions
-- [Custom Detection](https://docs.wiz.io/docs/custom-detection-settings)   The document provides instructions on customizing Wiz's scanning settings, including defining custom IP ranges, setting malware exclusion rules, detecting specific files, and managing application endpoints for inactive machines, with a focus on enhancing security and exposure analysis.
-- [Data Security](https://docs.wiz.io/docs/data-security-settings)   Wiz automatically onboards public AKS, GKE, and EKS clusters using the same permissions from their CSP-specific Cloud Connectors. AWS Connectors created before September 2024 require manual opt-in. Other cluster flavors need dedicated Kubernetes Connectors. You can also turn on deployed image scanning for each Kubernetes cluster type.
-- [Identity Security](https://docs.wiz.io/docs/cloud-entitlements-settings)    Configure scanning mode, frequency, image tag limits, age filters, pattern filters, and private base image detection for cloud-based container registries, and turn on deployed image scanning based on Sensor events.
-- [Kubernetes Connector](https://docs.wiz.io/docs/kubernetes-scanner-settings)    
-- [Registry Scanner](https://docs.wiz.io/docs/registry-scanner-settings)   
-- [Secrets Security](https://docs.wiz.io/docs/secrets-security-settings)
-- [Vulnerability Scanner](https://docs.wiz.io/docs/vulnerability-scanner-settings)    Wiz provides comprehensive vulnerability scanning for applications by analyzing library dependencies and sub-dependencies, with customizable settings that apply tenant-wide.
-- [Workload Scanner](https://docs.wiz.io/docs/workload-scanner-settings)     The document outlines the functionalities and configurations of the Workload Scanner, which scans cloud workloads like VM disks and serverless functions, and provides detailed instructions on enabling and configuring various scanning features, such as non-OS disk scanning, AWS Lightsail and Lambda scanning, and custom tagging, to enhance security insights and manage scanning processes efficiently.
+
+https://www.youtube.com/watch?v=Is-OxByUl_A&t=623s  Communication is giving of topic that allow ..voice and sound you bring to make it sensire to you ...practice and make it easier to understand ..giving emotional meaning/energy .. hearing the words and not feeling the feeling when someone is talking --- need to express emotions in words and tone so others can be there for you and understand ...the following is something I need to follow is never assume and great someone with the optimism that they will be a friend or have something to share assuming WARM ..break the outpolit mode .Been busy lately ..been good or whats been good .. ask wtih question to trigger thinking 
+Think of generosity as from of time and energy .. adding more value to conversation then jsut the words th VIB ...Vinh Giang is High Low Buffalo (somehting unique about you)  is his opening and phrase as a game 
+This cue is the most important one please pay attention .. and will see focus expression ...goal is also to lead person past the hesitation and well let me tell his another way or I tried this but failed... Bring Energy with TONE and expression as a form of graditude 
+Vinh Giang appreach  ... Vanessa looks under the eye the lid part of the skin to see if users is listening Eye closed when focused .. at 15 minutes wi
